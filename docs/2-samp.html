@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Sampling and stratification | Manual for building tree volume and biomass allometric equations</title>
+  <meta name="description" content="2 Sampling and stratification | Manual for building tree volume and biomass allometric equations" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Sampling and stratification | Manual for building tree volume and biomass allometric equations" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Sampling and stratification | Manual for building tree volume and biomass allometric equations" />
+  
+  
+  
+
+<meta name="author" content="Nicolas Picard, Laurent Saint-André, Matieu Henry" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="1-biol.html"/>
+<link rel="next" href="3-ter.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./index.html"><b>Manual for building tree volume and biomass allometric equations </b></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover page</a></li>
+<li class="chapter" data-level="" data-path="note-on-the-version-2.html"><a href="note-on-the-version-2.html"><i class="fa fa-check"></i>Note on the version 2</a></li>
+<li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html"><i class="fa fa-check"></i>Preamble</a></li>
+<li class="chapter" data-level="1" data-path="1-biol.html"><a href="1-biol.html"><i class="fa fa-check"></i><b>1</b> The foundations of biomass estimations</a><ul>
+<li class="chapter" data-level="1.1" data-path="1-biol.html"><a href="1-biol.html#biology-eichhorns-rule-site-index-etc."><i class="fa fa-check"></i><b>1.1</b> “Biology”: Eichhorn’s rule, site index, etc.</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="1-biol.html"><a href="1-biol.html#even-aged-monospecific-stands"><i class="fa fa-check"></i><b>1.1.1</b> Even-aged, monospecific stands</a></li>
+<li class="chapter" data-level="1.1.2" data-path="1-biol.html"><a href="1-biol.html#uneven-aged-andor-multispecific-stands"><i class="fa fa-check"></i><b>1.1.2</b> Uneven-aged and/or multispecific stands</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="1-biol.html"><a href="1-biol.html#selecting-a-method"><i class="fa fa-check"></i><b>1.2</b> Selecting a method</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="1-biol.html"><a href="1-biol.html#estimating-the-biomass-of-a-biome"><i class="fa fa-check"></i><b>1.2.1</b> Estimating the biomass of a biome</a></li>
+<li class="chapter" data-level="1.2.2" data-path="1-biol.html"><a href="1-biol.html#estimating-the-biomass-of-a-forest-or-a-set-of-forests"><i class="fa fa-check"></i><b>1.2.2</b> Estimating the biomass of a forest or a set of forests</a></li>
+<li class="chapter" data-level="1.2.3" data-path="1-biol.html"><a href="1-biol.html#measuring-the-biomass-of-a-tree"><i class="fa fa-check"></i><b>1.2.3</b> Measuring the biomass of a tree</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="2-samp.html"><a href="2-samp.html"><i class="fa fa-check"></i><b>2</b> Sampling and stratification</a><ul>
+<li class="chapter" data-level="2.1" data-path="2-samp.html"><a href="2-samp.html#simple"><i class="fa fa-check"></i><b>2.1</b> Sampling for a simple linear regression</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="2-samp.html"><a href="2-samp.html#predicting-the-volume-of-a-particular-tree"><i class="fa fa-check"></i><b>2.1.1</b> Predicting the volume of a particular tree</a></li>
+<li class="chapter" data-level="2.1.2" data-path="2-samp.html"><a href="2-samp.html#peup"><i class="fa fa-check"></i><b>2.1.2</b> Predicting the volume of a stand</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="2-samp.html"><a href="2-samp.html#sampling-to-construct-volume-tables"><i class="fa fa-check"></i><b>2.2</b> Sampling to construct volume tables</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="2-samp.html"><a href="2-samp.html#size"><i class="fa fa-check"></i><b>2.2.1</b> Number of trees</a></li>
+<li class="chapter" data-level="2.2.2" data-path="2-samp.html"><a href="2-samp.html#vent"><i class="fa fa-check"></i><b>2.2.2</b> Sorting trees</a></li>
+<li class="chapter" data-level="2.2.3" data-path="2-samp.html"><a href="2-samp.html#stratif"><i class="fa fa-check"></i><b>2.2.3</b> Stratification</a></li>
+<li class="chapter" data-level="2.2.4" data-path="2-samp.html"><a href="2-samp.html#sel"><i class="fa fa-check"></i><b>2.2.4</b> Selecting trees</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="2-samp.html"><a href="2-samp.html#sampeup"><i class="fa fa-check"></i><b>2.3</b> Sampling for stand estimations</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="2-samp.html"><a href="2-samp.html#sampling-unit"><i class="fa fa-check"></i><b>2.3.1</b> Sampling unit</a></li>
+<li class="chapter" data-level="2.3.2" data-path="2-samp.html"><a href="2-samp.html#relation-between-coefficient-of-variation-and-plot-size"><i class="fa fa-check"></i><b>2.3.2</b> Relation between coefficient of variation and plot size</a></li>
+<li class="chapter" data-level="2.3.3" data-path="2-samp.html"><a href="2-samp.html#selecting-plot-size"><i class="fa fa-check"></i><b>2.3.3</b> Selecting plot size</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="3-ter.html"><a href="3-ter.html"><i class="fa fa-check"></i><b>3</b> In the field</a><ul>
+<li class="chapter" data-level="3.1" data-path="3-ter.html"><a href="3-ter.html#pese"><i class="fa fa-check"></i><b>3.1</b> Weighing all compartments directly in the field</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="3-ter.html"><a href="3-ter.html#in-the-field"><i class="fa fa-check"></i><b>3.1.1</b> In the field</a></li>
+<li class="chapter" data-level="3.1.2" data-path="3-ter.html"><a href="3-ter.html#lab1"><i class="fa fa-check"></i><b>3.1.2</b> In the laboratory</a></li>
+<li class="chapter" data-level="3.1.3" data-path="3-ter.html"><a href="3-ter.html#calculations"><i class="fa fa-check"></i><b>3.1.3</b> Calculations</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="3-ter.html"><a href="3-ter.html#direct-weighing-for-certain-compartments-and-volume-and-density-measurements-for-others"><i class="fa fa-check"></i><b>3.2</b> Direct weighing for certain compartments and volume and density measurements for others</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="3-ter.html"><a href="3-ter.html#in-the-field-case-of-semi-destructive-measurements"><i class="fa fa-check"></i><b>3.2.1</b> In the field: case of semi-destructive measurements</a></li>
+<li class="chapter" data-level="3.2.2" data-path="3-ter.html"><a href="3-ter.html#lab2"><i class="fa fa-check"></i><b>3.2.2</b> In the laboratory</a></li>
+<li class="chapter" data-level="3.2.3" data-path="3-ter.html"><a href="3-ter.html#calculations-1"><i class="fa fa-check"></i><b>3.2.3</b> Calculations</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="3-ter.html"><a href="3-ter.html#partial-weighings-in-the-field"><i class="fa fa-check"></i><b>3.3</b> Partial weighings in the field</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="3-ter.html"><a href="3-ter.html#trees-less-than-20-cm-in-diameter"><i class="fa fa-check"></i><b>3.3.1</b> Trees less than 20 cm in diameter</a></li>
+<li class="chapter" data-level="3.3.2" data-path="3-ter.html"><a href="3-ter.html#trees-more-than-20-cm-in-diameter"><i class="fa fa-check"></i><b>3.3.2</b> Trees more than 20 cm in diameter</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="3-ter.html"><a href="3-ter.html#measuring-roots"><i class="fa fa-check"></i><b>3.4</b> Measuring roots</a></li>
+<li class="chapter" data-level="3.5" data-path="3-ter.html"><a href="3-ter.html#matos"><i class="fa fa-check"></i><b>3.5</b> Recommended equipment</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="3-ter.html"><a href="3-ter.html#heavy-machinery-and-vehicles"><i class="fa fa-check"></i><b>3.5.1</b> Heavy machinery and vehicles</a></li>
+<li class="chapter" data-level="3.5.2" data-path="3-ter.html"><a href="3-ter.html#general-equipment"><i class="fa fa-check"></i><b>3.5.2</b> General equipment</a></li>
+<li class="chapter" data-level="3.5.3" data-path="3-ter.html"><a href="3-ter.html#computer-entering-field-data"><i class="fa fa-check"></i><b>3.5.3</b> Computer-entering field data</a></li>
+<li class="chapter" data-level="3.5.4" data-path="3-ter.html"><a href="3-ter.html#laboratory-equipment"><i class="fa fa-check"></i><b>3.5.4</b> Laboratory equipment</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="3-ter.html"><a href="3-ter.html#equip"><i class="fa fa-check"></i><b>3.6</b> Recommended field team composition</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="4-don.html"><a href="4-don.html"><i class="fa fa-check"></i><b>4</b> Entering and formatting data</a><ul>
+<li class="chapter" data-level="4.1" data-path="4-don.html"><a href="4-don.html#data-entry"><i class="fa fa-check"></i><b>4.1</b> Data entry</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="4-don.html"><a href="4-don.html#data-entry-errors"><i class="fa fa-check"></i><b>4.1.1</b> Data entry errors</a></li>
+<li class="chapter" data-level="4.1.2" data-path="4-don.html"><a href="4-don.html#meta-information"><i class="fa fa-check"></i><b>4.1.2</b> Meta-information</a></li>
+<li class="chapter" data-level="4.1.3" data-path="4-don.html"><a href="4-don.html#nested-levels"><i class="fa fa-check"></i><b>4.1.3</b> Nested levels</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="4-don.html"><a href="4-don.html#data-cleansing"><i class="fa fa-check"></i><b>4.2</b> Data cleansing</a></li>
+<li class="chapter" data-level="4.3" data-path="4-don.html"><a href="4-don.html#data-formatting"><i class="fa fa-check"></i><b>4.3</b> Data formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="5-explo.html"><a href="5-explo.html"><i class="fa fa-check"></i><b>5</b> Graphical exploration of the data</a><ul>
+<li class="chapter" data-level="5.1" data-path="5-explo.html"><a href="5-explo.html#exploring-the-mean-relation"><i class="fa fa-check"></i><b>5.1</b> Exploring the mean relation</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="5-explo.html"><a href="5-explo.html#plus"><i class="fa fa-check"></i><b>5.1.1</b> When there is more than one effect variable</a></li>
+<li class="chapter" data-level="5.1.2" data-path="5-explo.html"><a href="5-explo.html#determining-whether-or-not-a-relation-is-adequate"><i class="fa fa-check"></i><b>5.1.2</b> Determining whether or not a relation is adequate</a></li>
+<li class="chapter" data-level="5.1.3" data-path="5-explo.html"><a href="5-explo.html#catalog-of-primitives"><i class="fa fa-check"></i><b>5.1.3</b> Catalog of primitives</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="5-explo.html"><a href="5-explo.html#exploring-variance"><i class="fa fa-check"></i><b>5.2</b> Exploring variance</a></li>
+<li class="chapter" data-level="5.3" data-path="5-explo.html"><a href="5-explo.html#exploring-doesnt-mean-selecting"><i class="fa fa-check"></i><b>5.3</b> Exploring doesn’t mean selecting</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="6-fit.html"><a href="6-fit.html"><i class="fa fa-check"></i><b>6</b> Model fitting</a><ul>
+<li class="chapter" data-level="6.1" data-path="6-fit.html"><a href="6-fit.html#fitting-a-linear-model"><i class="fa fa-check"></i><b>6.1</b> Fitting a linear model</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="6-fit.html"><a href="6-fit.html#simple-linear-regression"><i class="fa fa-check"></i><b>6.1.1</b> Simple linear regression</a></li>
+<li class="chapter" data-level="6.1.2" data-path="6-fit.html"><a href="6-fit.html#multiple-regression"><i class="fa fa-check"></i><b>6.1.2</b> Multiple regression</a></li>
+<li class="chapter" data-level="6.1.3" data-path="6-fit.html"><a href="6-fit.html#pond"><i class="fa fa-check"></i><b>6.1.3</b> Weighted regression</a></li>
+<li class="chapter" data-level="6.1.4" data-path="6-fit.html"><a href="6-fit.html#lme"><i class="fa fa-check"></i><b>6.1.4</b> Linear regression with variance model</a></li>
+<li class="chapter" data-level="6.1.5" data-path="6-fit.html"><a href="6-fit.html#trans"><i class="fa fa-check"></i><b>6.1.5</b> Transforming variables</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="6-fit.html"><a href="6-fit.html#nlm"><i class="fa fa-check"></i><b>6.2</b> Fitting a non-linear model</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="6-fit.html"><a href="6-fit.html#exponent-known"><i class="fa fa-check"></i><b>6.2.1</b> Exponent known</a></li>
+<li class="chapter" data-level="6.2.2" data-path="6-fit.html"><a href="6-fit.html#estimating-the-exponent"><i class="fa fa-check"></i><b>6.2.2</b> Estimating the exponent</a></li>
+<li class="chapter" data-level="6.2.3" data-path="6-fit.html"><a href="6-fit.html#algo"><i class="fa fa-check"></i><b>6.2.3</b> Numerical optimization</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="6-fit.html"><a href="6-fit.html#select"><i class="fa fa-check"></i><b>6.3</b> Selecting variables and models</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="6-fit.html"><a href="6-fit.html#selecting-variables"><i class="fa fa-check"></i><b>6.3.1</b> Selecting variables</a></li>
+<li class="chapter" data-level="6.3.2" data-path="6-fit.html"><a href="6-fit.html#selmod"><i class="fa fa-check"></i><b>6.3.2</b> Selecting models</a></li>
+<li class="chapter" data-level="6.3.3" data-path="6-fit.html"><a href="6-fit.html#choosing-a-fitting-method"><i class="fa fa-check"></i><b>6.3.3</b> Choosing a fitting method</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="6-fit.html"><a href="6-fit.html#stratification-and-aggregation-factors"><i class="fa fa-check"></i><b>6.4</b> Stratification and aggregation factors</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="6-fit.html"><a href="6-fit.html#stdat"><i class="fa fa-check"></i><b>6.4.1</b> Stratifying data</a></li>
+<li class="chapter" data-level="6.4.2" data-path="6-fit.html"><a href="6-fit.html#cmpt"><i class="fa fa-check"></i><b>6.4.2</b> Tree compartments</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="7-util.html"><a href="7-util.html"><i class="fa fa-check"></i><b>7</b> Uses and prediction</a><ul>
+<li class="chapter" data-level="7.1" data-path="7-util.html"><a href="7-util.html#val"><i class="fa fa-check"></i><b>7.1</b> Validating a model</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="7-util.html"><a href="7-util.html#Ival"><i class="fa fa-check"></i><b>7.1.1</b> Validation criteria</a></li>
+<li class="chapter" data-level="7.1.2" data-path="7-util.html"><a href="7-util.html#cross-validation"><i class="fa fa-check"></i><b>7.1.2</b> Cross validation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="7-util.html"><a href="7-util.html#BVpred"><i class="fa fa-check"></i><b>7.2</b> Predicting the volume or biomass of a tree</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="7-util.html"><a href="7-util.html#plm"><i class="fa fa-check"></i><b>7.2.1</b> Prediction: linear model</a></li>
+<li class="chapter" data-level="7.2.2" data-path="7-util.html"><a href="7-util.html#pnls"><i class="fa fa-check"></i><b>7.2.2</b> Prediction: case of a non-linear model</a></li>
+<li class="chapter" data-level="7.2.3" data-path="7-util.html"><a href="7-util.html#papp"><i class="fa fa-check"></i><b>7.2.3</b> Approximated confidence intervals</a></li>
+<li class="chapter" data-level="7.2.4" data-path="7-util.html"><a href="7-util.html#invtra"><i class="fa fa-check"></i><b>7.2.4</b> Inverse variables transformation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="7-util.html"><a href="7-util.html#predicting-the-volume-or-biomass-of-a-stand"><i class="fa fa-check"></i><b>7.3</b> Predicting the volume or biomass of a stand</a></li>
+<li class="chapter" data-level="7.4" data-path="7-util.html"><a href="7-util.html#BEF"><i class="fa fa-check"></i><b>7.4</b> Expanding and converting volume and biomass models</a></li>
+<li class="chapter" data-level="7.5" data-path="7-util.html"><a href="7-util.html#arbi"><i class="fa fa-check"></i><b>7.5</b> Arbitrating between different models</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="7-util.html"><a href="7-util.html#comparing-using-validation-criteria"><i class="fa fa-check"></i><b>7.5.1</b> Comparing using validation criteria</a></li>
+<li class="chapter" data-level="7.5.2" data-path="7-util.html"><a href="7-util.html#choosing-a-model"><i class="fa fa-check"></i><b>7.5.2</b> Choosing a model</a></li>
+<li class="chapter" data-level="7.5.3" data-path="7-util.html"><a href="7-util.html#bayesian-model-averaging"><i class="fa fa-check"></i><b>7.5.3</b> Bayesian model averaging</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="conclusions-and-recommendations.html"><a href="conclusions-and-recommendations.html"><i class="fa fa-check"></i>Conclusions and recommendations</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="list-of-red-lines.html"><a href="list-of-red-lines.html"><i class="fa fa-check"></i>List of red lines</a></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>Glossary</a></li>
+<li class="chapter" data-level="" data-path="lexicon-of-mathematical-symbols.html"><a href="lexicon-of-mathematical-symbols.html"><i class="fa fa-check"></i>Lexicon of mathematical symbols</a><ul>
+<li class="chapter" data-level="" data-path="lexicon-of-mathematical-symbols.html"><a href="lexicon-of-mathematical-symbols.html#latin-symbols"><i class="fa fa-check"></i>Latin symbols</a></li>
+<li class="chapter" data-level="" data-path="lexicon-of-mathematical-symbols.html"><a href="lexicon-of-mathematical-symbols.html#greek-symbols"><i class="fa fa-check"></i>Greek symbols</a></li>
+<li class="chapter" data-level="" data-path="lexicon-of-mathematical-symbols.html"><a href="lexicon-of-mathematical-symbols.html#non-alphabetical-symbols"><i class="fa fa-check"></i>Non-alphabetical symbols</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
+<li class="divider"></li>
+<li><a href="http://www.globallometree.org/" target="blank"><b>More on GlobAllomeTree</b></a></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank"><i>Published with bookdown</i></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Manual for building tree volume and biomass allometric equations</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="samp" class="section level1">
+<h1><span class="header-section-number">2</span> Sampling and stratification</h1>
+<div class="watermark">
+DRAFT
+</div>
+<p>Sampling consists in predicting the characteristics of a set from one part (a sample) of this set. Typically, we want to estimate the volume of wood in a forest, but it is impossible to measure the volume of all the trees one by one. We therefore measure the volume of a sample of trees in the forest, then extrapolate to obtain an estimate for all the trees in the entire forest <span class="citation">(p.252 CTFT <a href="bibliography.html#ref-ctft89" role="doc-biblioref">1989</a>)</span>. As volume is measured only in a sample of trees, the estimated total volume we obtain suffers from a <em>sampling error</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.
+Sampling in the strict sense consists in:</p>
+<ol style="list-style-type: decimal">
+<li><p>selecting appropriate trees for the measured set (we tend to speak of a <em>sampling plan</em>),</p></li>
+<li><p>selecting a method used to calculate total volume from the measurements (we tend to speak of an <em>estimator</em>),</p></li>
+</ol>
+<p>in such a manner to minimize the sampling error.</p>
+<p>In conventional sampling theory, the volumes of <span class="math inline">\(N\)</span> trees in the stand are fixed data: the only source of variation in the estimations is the sampling, such that exhaustive sampling would always give the same estimation. Here in this guide we will adopt the so-called super-population approach that was developed in the 1970s <span class="citation">(Cochran <a href="bibliography.html#ref-cochran77" role="doc-biblioref">1977</a>)</span>. This consists in considering that the volumes of the <span class="math inline">\(N\)</span> trees that make up the stand are random variables, such that the observed stand is only one among others drawn from a super-population. This approach means that we can do away with certain approximations and draw up an optimal sampling plan (something that is often impossible in the conventional approach). It does, however, have the disadvantage of leading to incorrect solutions if the super-population model adopted does not comply with reality.</p>
+<p>The sampling method depends on the goal. Therefore, in principle, the question must first be asked as to the purpose of the volume or biomass tables we are seeking to construct. Are they to serve to predict the characteristics of a particular tree that has known entry variables? Are they to serve to predict the characteristics of an average tree from data on entry variables? Are they to serve to predict the total volume of the stand that yielded the trees used to construct the tables, or the total volume of another stand? In both these latter cases, are the tables’ entry variables measured in all the trees of the stand, or again on a sample of trees? Etc. We can therefore construct a chain that runs from the studied stand to the variable we are looking to predict (Figure <a href="2-samp.html#fig:cha">2.1</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:cha"></span>
+<img src="source/figures/cha.png" alt="Chain running from the studied stand to the variables we are looking to predict." width="60%" />
+<p class="caption">
+Figure 2.1: Chain running from the studied stand to the variables we are looking to predict.
+</p>
+</div>
+<p>By following this chain backward, it can be seen that the precision of the predicted variable depends on the precision of the tables’ parameters, which itself depends on the sampling plan (number and selection of trees measured) and the variability within the studied stand <span class="citation">(Cunia <a href="bibliography.html#ref-cunia87c" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87c" role="doc-biblioref">d</a>)</span>. We can therefore set a target for the precision of our predictions which, by a retroactive effect for a given table and a given sampling type, determines the minimum number of trees to be measured. We can also apply an optimization procedure to determine, for a given target precision and a given table, the sampling method that minimizes measurement time or cost <span class="citation">(Cunia <a href="bibliography.html#ref-cunia87" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87" role="doc-biblioref">a</a>, <a href="bibliography.html#ref-cunia87d" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87d" role="doc-biblioref">b</a>)</span>. In certain cases the cost of the measurements is the limiting factor. This in particular is the case for biomass measurements of root systems. Here in this case we are not looking so much to reach a given target precision in our prediction but to remain within reasonable cost limits. We can therefore, for a given measurement cost and a given type of table, determine the sampling plan that maximizes the precision of our predictions.</p>
+<p>This reasoning, which is often too complex to be followed in a rigorous manner, should be applied on a case-by-case basis as it depends (<em>i</em>) on what we are looking to predict, (<em>ii</em>) on the type of tables used and (<em>iii</em>) on the type of sampling adopted. The fact that we are using a table is in itself a constraint on the sampling method: the total volume of a stand can be estimated from the volume of a sample of trees, without using volume tables. By using volume tables to estimate the total volume of a stand, we are already restricting ourselves to one type of total volume <em>estimator</em>.</p>
+<p>What is more, the reasoning used to determine the sampling plan that complies with the target precision for our predictions assumes that we know the relation between the precision of our predictions and the precision of the parameters used to construct the tables, and the relation between the precision of the parameters used to construct the tables and sample size, etc. In certain simple cases these relations are explicitly known. But in most cases, as soon as the tables take a more complex form, these relations are not explicit. In this case, the above reasoning is no longer tractable.</p>
+<p>This reasoning is delivered a knock-out blow when we realize that: (<em>i</em>) volume/biomass tables generally have multiple purposes or unspecified purposes and (<em>ii</em>) the form of these tables is generally unknown in advance. This is due to the simple fact that in most cases we wish to use these tables for different ends: to estimate the volume of a particular tree, an average tree, an entire stand, etc. Constructing the tables is ultimately an end in itself, without any reference to a quantity we wish to predict. Also, the form of the table is most often selected based on the results of an exploratory data analysis, and is therefore not known in advance. Obviously, some relationships such as the power function or second-order polynomials often recur, but no rule can be established <em>a priori</em>. It is therefore illusory to look to optimize a sampling plan.</p>
+<p>Ultimately, the sampling used to construct volume/biomass tables is generally based on empirical considerations relating to the sampling plan. The choice of the <em>estimator</em>, which in fact determines which tables are chosen is made <em>a posteriori</em>, depending on the data collected, and independently of the sampling plan.</p>
+<div id="simple" class="section level2">
+<h2><span class="header-section-number">2.1</span> Sampling for a simple linear regression</h2>
+<p>Let us begin with a simple example that clearly illustrates the notions developed above. Let us assume that the trees in a given stand are described by their dbh <span class="math inline">\(D\)</span>, their height <span class="math inline">\(H\)</span> and their volume <span class="math inline">\(V\)</span>. We use volume tables that predict volume <span class="math inline">\(V\)</span> from the variable <span class="math inline">\(D^2H\)</span>. The super-population model we adopt to describe the stand assumes that the relation between <span class="math inline">\(V\)</span> and <span class="math inline">\(D^2H\)</span> is linear, with white noise <span class="math inline">\(\varepsilon\)</span> of variance <span class="math inline">\(\sigma^2\)</span>:
+<span class="math display" id="eq:MLex">\[\begin{equation}
+V=\alpha+\beta D^2H+\varepsilon\tag{2.1}
+\end{equation}\]</span>
+where <span class="math inline">\(\varepsilon\)</span> follows a normal distribution of zero expectation and standard deviation <span class="math inline">\(\sigma\)</span>. Let us also assume that the quantity <span class="math inline">\(D^2H\)</span> follows a normal distribution with a mean of <span class="math inline">\(\mu\)</span> and a standard deviation of <span class="math inline">\(\tau\)</span>. White noise <span class="math inline">\(\varepsilon\)</span> incorporates all the factors that cause two trees of the same dbh and the same height not to have necessarily the same volume. Parameters
+<span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> are unknown. To estimate them, we will measure
+<span class="math inline">\(n\)</span> trees; and will thus obtain a sample of <span class="math inline">\(n\)</span> doublets
+<span class="math inline">\((D_1^2H_1,\ V_1),\ \ldots,\ (D_n^2H_n,\ V_n)\)</span>, then construct the following linear regression:
+<span class="math display" id="eq:reg">\[\begin{equation}
+V_i=a+b D_i^2H_i+\varepsilon_i\tag{2.2}
+\end{equation}\]</span>
+In sampling theory jargon, the entry variables for the volume/biomass tables (diameter, height <span class="math inline">\(\ldots\)</span>) are called <em>auxiliary</em> variables. It is important to distinguish these tree-related variables from those such as age which are stand-related. These latter variables are considered as parameters <span class="citation">(p.106 Pardé and Bouchon <a href="bibliography.html#ref-parde88" role="doc-biblioref">1988</a>)</span>. Also, the sampling <em>unit</em> is the tree. Let us now see how to draw up a sampling plan on the basis of the goal set.</p>
+<div id="predicting-the-volume-of-a-particular-tree" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Predicting the volume of a particular tree</h3>
+<p>Let us assume that the goal is to predict the volume of a tree in a stand of dbh <span class="math inline">\(D^*\)</span> and height <span class="math inline">\(H^*\)</span>. Its predicted volume is of course:
+<span class="math display">\[
+V^*=a+b D^{*2}H^*
+\]</span>
+The super-population model stipulates that because of white noise
+<span class="math inline">\(\varepsilon\)</span>, two trees selected at random and with the same dbh <span class="math inline">\(D\)</span> and the same height <span class="math inline">\(H\)</span> do not necessarily have the same volume. This means we are faced with intrinsic variability when we measure a particular tree, equal to <span class="math inline">\(\sigma^2\)</span>. When attempting to predict volumes, this intrinsic variability is supplemented by the variability due to the imprecision of the <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> parameter estimations. We will return to these notions later (in Chapter <a href="7-util.html#util">7</a>). Thus, for a linear regression, the semi-amplitude of the confidence interval at the threshold <span class="math inline">\(\alpha\)</span> (typically 5 %) of <span class="math inline">\(V^*\)</span> is equal to <span class="citation">(p.374 Saporta <a href="bibliography.html#ref-saporta90" role="doc-biblioref">1990</a>)</span>:
+<span class="math display">\[
+t_{n-2}\;\hat{\sigma} \sqrt{1+\frac{1}{n}+
+\frac{(D^{*2}H^*-\overline{D^2H}_e)^2}{\sum_{i=1}^n(D_i^2H_i
+-\overline{D^2H}_e)^2}}
+\]</span>
+where <span class="math inline">\(t_{n-2}\)</span> is the quantile <span class="math inline">\(1-\alpha/2\)</span> of a Student’s distribution with
+<span class="math inline">\(n-2\)</span> degrees of freedom, <span class="math inline">\(\overline{D^2H}_e\)</span> is the empirical mean of the <span class="math inline">\(D^2H\)</span> values measured in the sample:
+<span class="math display">\[
+\overline{D^2H}_e=\frac{1}{n}\sum_{i=1}^nD_i^2H_i
+\]</span>
+and <span class="math inline">\(\hat{\sigma}\)</span> is an estimate of the standard deviation of the residuals:
+<span class="math display">\[
+\hat{\sigma}^2=\frac{1}{n-2}\sum_{i=1}^n[V_i-(a+b D_i^2H_i)]^2
+\]</span>
+The lowest value of this semi-amplitude (when <span class="math inline">\(n\rightarrow\infty\)</span>) is <span class="math inline">\(1.96\ \sigma\)</span>. We will now set our precision target for the estimation as a deviation of <span class="math inline">\(E\ \%\)</span>
+from this incompressible minimum, i.e. in an approximate manner we are looking for sample size <span class="math inline">\(n\)</span>
+such that:
+<span class="math display" id="eq:E1">\[\begin{equation}
+1 + E \approx \sqrt{
+1 + \frac{1}{n} + \frac{(D^{*2}H^* - \overline{D^2H}_e)^2}{\sum_{i=1}^n(D_i^2H_i - \overline{D^2H}_e)^2}
+}\tag{2.3}
+\end{equation}\]</span></p>
+<div id="random-sampling" class="section level4 unnumbered">
+<h4>Random sampling</h4>
+<p>Let us first examine the case where we do not look to optimize the sampling plan, for example by selecting sample trees at random. The empirical mean of <span class="math inline">\(D^2H\)</span> in the sample is therefore an estimation of <span class="math inline">\(\mu\)</span>, while the empirical variance of <span class="math inline">\(D^2H\)</span> in the sample is an estimation of <span class="math inline">\(\tau^2\)</span>. Thus:
+<span class="math display">\[
+(1+E)^2-1\approx\frac{1}{n}\left[
+1+\frac{(D^{*2}H^*-\mu)^2}{\tau^2}\right]
+\]</span>
+By way of a numerical example, let us take <span class="math inline">\(\mu=5\)</span> m<sup>3</sup> as the mean value of <span class="math inline">\(D^2H\)</span> in the entire stand and <span class="math inline">\(\tau=1\)</span> m<sup>3</sup>
+as its standard deviation. If we want to predict the volume of a tree that has a <span class="math inline">\(D^2H\)</span> of 2 m<sup>3</sup> with a precision deviation of <span class="math inline">\(E=5\ \%\)</span>, we will have to measure approximately <span class="math inline">\(n=98\)</span> trees.
+We can see here that the expression of <span class="math inline">\(n\)</span> in relation to <span class="math inline">\(D^{*2}H^*\)</span>
+is symmetrical around <span class="math inline">\(\mu\)</span> and passes through a minimum for <span class="math inline">\(D^{*2}H^*=\mu\)</span>. As <span class="math inline">\(\mu-2=3\)</span> m<sup>3</sup> and <span class="math inline">\(\mu+3=8\)</span> m<sup>3</sup>, we will also need <span class="math inline">\(n=98\)</span> trees to predict the volume of a tree whose <span class="math inline">\(D^2H\)</span> is 8 m<sup>3</sup> with a precision deviation of 5 %. The <span class="math inline">\(n=98\)</span> sample size may also be interpreted as that which ensures a precision deviation of at most 5 % (at <span class="math inline">\(\alpha=5\ \%\)</span>) for all predictions in the 2–8 m<sup>3</sup> range.</p>
+</div>
+<div id="optimized-sampling" class="section level4 unnumbered">
+<h4>Optimized sampling</h4>
+<p>Let us now examine the case where we are looking to optimize the sampling plan in relation to the value of <span class="math inline">\(D^{*2}H^*\)</span>. Equation <a href="2-samp.html#eq:E1">(2.3)</a> shows that precision deviation <span class="math inline">\(E\)</span> is smallest when <span class="math inline">\(\overline{D^2H}_e=D^{*2}H^*\)</span>. It is therefore advantageous to select sample trees in such a manner that their empirical mean <span class="math inline">\(D^2H\)</span> value is <span class="math inline">\(D^{*2}H^*\)</span>. In practice, as the empirical mean of the sample’s <span class="math inline">\(D^2H\)</span> values will never be exactly <span class="math inline">\(D^{*2}H^*\)</span>, it is advantageous to maximize the denominator <span class="math inline">\(\sum_i(D_i^2H_i-\overline{D^2H}_e)^2\)</span>, i.e. to maximize the empirical variance of the sample’s <span class="math inline">\(D^2H\)</span> values. Ultimately, the sampling plan that maximizes the precision of the volume prediction of trees with <span class="math inline">\(D^2H\)</span> values of <span class="math inline">\(D^{*2}H^*\)</span> consists in selecting <span class="math inline">\(n/2\)</span> trees with <span class="math inline">\(D^2H\)</span> values of <span class="math inline">\(D^{*2}H^*-\Delta\)</span> and <span class="math inline">\(n/2\)</span> trees with <span class="math inline">\(D^2H\)</span> values of <span class="math inline">\(D^{*2}H^*+\Delta\)</span>, with <span class="math inline">\(\Delta\)</span> being as large as possible (Figure <a href="2-samp.html#fig:plan">2.2</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:plan"></span>
+<img src="Manual-AE_files/figure-html/plan-1.png" alt="Sampling plan optimizing volume prediction precision for a particular tree. The size deviation \(\Delta\) must be as large as possible." width="100%" />
+<p class="caption">
+Figure 2.2: Sampling plan optimizing volume prediction precision for a particular tree. The size deviation <span class="math inline">\(\Delta\)</span> must be as large as possible.
+</p>
+</div>
+<p>This sampling plan means that we can ignore the term dependent upon <span class="math inline">\(D^{*2}H^*\)</span> in Equation <a href="2-samp.html#eq:E1">(2.3)</a>, thus simplifying the relationship to:
+<span class="math display">\[
+(1+E)^2-1\approx\frac{1}{n}
+\]</span>
+For <span class="math inline">\(E=5\ \%\)</span>, this gives us <span class="math inline">\(n=10\)</span> trees. Optimizing the sampling plan has therefore “saved” us measuring 88 trees compared to the plan that consisted in selecting trees at random. However, the optimized plan is restricted to estimating the volume of a <span class="math inline">\(D^{*2}H^*\)</span>sized tree. It is not optimized for estimating the volume of other sized trees. This reasoning therefore clearly has its limitations as volume tables are not generally (or even never) constructed to predict the volume of only one size of tree.</p>
+<p>Even more seriously, the optimized sampling plan is also reliant upon the super-population model and may yield erroneous estimations if it does not correspond to reality. This is illustrated in Figure <a href="2-samp.html#fig:bad">2.3</a>. The optimized sampling plan for a given <span class="math inline">\(D^{*2}H^*\)</span> size leads to the selection of extreme points (in black in Figure <a href="2-samp.html#fig:bad">2.3</a>) for the sample. This situation is critical for a linear regression as two groups of points far removed one from the other will give an elevated <span class="math inline">\(R^2\)</span> value without us really knowing what is happening between the two. If the linear relation assumed by the super-population model is correct (Figure <a href="2-samp.html#fig:bad">2.3</a> left), then there is no problem: the volume predicted by the tables (shown by a star) will indeed be close to the actual value (gray point). By contrast, if the super-population model is wrong, the predicted volume will be wrong: this is illustrated in Figure <a href="2-samp.html#fig:bad">2.3</a> on the right (where the sample points, in black, are exactly the same as those in Figure <a href="2-samp.html#fig:bad">2.3</a> on the left), where the size-volume relationship is in fact parabolic, not linear. In practice, the shape of the size-volume relationship (and therefore the volume tables) is not known in advance, and it is therefore best to sample trees across the entire size variation interval so as to visualize the nature of the size-volume relationship.</p>
+<div class="figure" style="text-align: center"><span id="fig:bad"></span>
+<img src="source/figures/badplan.png" alt="Volume prediction based on a linear regression constructed using extreme points (in black) when the size-volume relationship is indeed linear (left) and when it is not (right). The black points are the same in both cases. The star indicates the volume predicted by the linear regression constructed using the black points while the gray points indicate the real volume corresponding to \(D^{*2}H^*\)." width="80%" />
+<p class="caption">
+Figure 2.3: Volume prediction based on a linear regression constructed using extreme points (in black) when the size-volume relationship is indeed linear (left) and when it is not (right). The black points are the same in both cases. The star indicates the volume predicted by the linear regression constructed using the black points while the gray points indicate the real volume corresponding to <span class="math inline">\(D^{*2}H^*\)</span>.
+</p>
+</div>
+</div>
+</div>
+<div id="peup" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> Predicting the volume of a stand</h3>
+<p>Let us now assume that the goal is to predict the volume of an entire stand. Here, we must first assume that we measure dbh <span class="math inline">\(D\)</span> and height <span class="math inline">\(H\)</span> in <em>all</em> the trees in the stand. Let <span class="math inline">\(N\)</span> be the number of trees in the stand (including the <span class="math inline">\(n\)</span> trees in the sample). Modulo renumbering of the trees therefore gives us a measurement of tree volume <span class="math inline">\(V\)</span> for <span class="math inline">\(i=1,\ \ldots,\ n\)</span> and a measurement of tree size <span class="math inline">\(D^2H\)</span> for <span class="math inline">\(i=1,\ \ldots,\ N\)</span>. The estimator for the total volume of the stand deduced from the volume tables is therefore:
+<span class="math display">\[
+V_{\scriptsize \mbox{tot}}=\sum_{i=1}^N(a+bD_i^2H_i)
+\]</span>
+which may also be written: <span class="math inline">\(V_{\scriptsize \mbox{tot}}=N\bar{V}\)</span>, where <span class="math inline">\(\bar{V}=a+b\overline{D^2H}\)</span> is the mean volume of the trees in the stand, and <span class="math inline">\(\overline{D^2H}=(\sum_{i=1}^ND_i^2H_i)/N\)</span> is the mean dbh of the trees in the stand. To the extent that the volume tables are obtained by linear regression of (<span class="math inline">\(V_1,\ \ldots,\ V_n\)</span>) against (<span class="math inline">\(D_1^2H_1,\ \ldots,\ D_n^2H_n\)</span>), the numerical values of the coefficients <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> verify <span class="citation">(p.363 Saporta <a href="bibliography.html#ref-saporta90" role="doc-biblioref">1990</a>)</span>: <span class="math inline">\(\bar{V}_e=a+b\overline{D^2H}_e\)</span>, where <span class="math inline">\(\bar{V}_e=(\sum_{i=1}^nV_i)/n\)</span> is the mean volume of the trees in the sample and <span class="math inline">\(\overline{D^2H}_e=(\sum_{i=1}^nD_i^2H_i)/n\)</span> is the mean size of the trees in the sample. By subtracting, we arrive at the following result:
+<span class="math display" id="eq:est">\[\begin{equation}
+\bar{V}=\bar{V}_e+b(\overline{D^2H}-\overline{D^2H}_e)\tag{2.4}
+\end{equation}\]</span>
+In this equation it is important to note that <span class="math inline">\(\bar{V}\)</span> and <span class="math inline">\(\overline{D^2H}\)</span> are mean values for the entire stand while, <span class="math inline">\(\bar{V}_e\)</span> and <span class="math inline">\(\overline{D^2H}_e\)</span> are mean values for the sample. In addition <span class="math inline">\(\overline{D^2H}\)</span>, <span class="math inline">\(\overline{D^2H}_e\)</span> and <span class="math inline">\(\bar{V}_e\)</span> are derived from actual measurement, while <span class="math inline">\(\bar{V}\)</span> is the quantity we are looking to estimate.</p>
+<p>If we look at equation <a href="2-samp.html#eq:est">(2.4)</a>, we recognize it as being a type of estimator that is widely used in sampling theory: the <em>regression estimators</em>. The theoretical basis of regression estimators is described in detail in Cochran <span class="citation">(<a href="bibliography.html#ref-cochran77" role="doc-biblioref">1977</a>, chap. 7)</span> and in Thompson <span class="citation">(Thompson <a href="bibliography.html#ref-thompson92" role="doc-biblioref">1992</a>, chap. 8)</span>. A description of regression estimators used in forestry is given in <span class="citation">Vries (<a href="bibliography.html#ref-vries86" role="doc-biblioref">1986</a>)</span> and in Shiver &amp; Borders <span class="citation">(<a href="bibliography.html#ref-shiver96" role="doc-biblioref">1996</a>, chap. 6)</span> (the first is more theoretical, the second more applied). The theory of regression estimators applies in the case of a linear relationship between the quantity to be predicted (<span class="math inline">\(\bar{V}\)</span> in the example above) and an auxiliary variable (<span class="math inline">\(\overline{D^2H}\)</span> in the example above). By contrast, this theory is less well developed in the case of non-linear relations or multiple regressions, even though such cases often arise in connection with volume tables.</p>
+<p>The semi-amplitude of the confidence interval at <span class="math inline">\(\alpha\)</span> (typically 5 %) of <span class="math inline">\(\bar{V}\)</span> is <span class="citation">(Cochran <a href="bibliography.html#ref-cochran77" role="doc-biblioref">1977</a>, 199; Thompson <a href="bibliography.html#ref-thompson92" role="doc-biblioref">1992</a>, 83)</span>:
+<span class="math display" id="eq:icpop">\[\begin{equation}
+t_{n-2}\;\hat{\sigma}\ \sqrt{\frac{1}{n}-\frac{1}{N}+
+\frac{(\overline{D^2H}-\overline{D^2H}_e)^2}{\sum_{i=1}^n(D_i^2H_i
+-\overline{D^2H}_e)^2}}\tag{2.5}
+\end{equation}\]</span>
+It can be seen that the minimum of this amplitude is zero, that is reached when entire stand is included in the sample (<span class="math inline">\(n=N\)</span>, that means that <span class="math inline">\(\overline{D^2H}=\overline{D^2H}_e\)</span>). As before, the optimal sampling plan is such that <span class="math inline">\(\overline{D^2H}_e\)</span> is the closest possible to <span class="math inline">\(\overline{D^2H}\)</span>, with a maximal empirical variance of <span class="math inline">\(D^2H\)</span> in the sample.</p>
+<p>When deriving the regression estimator we assumed that size <span class="math inline">\(D^2H\)</span> is measured for <em>all</em> the trees in the stand in order to arrive at an estimation of total volume <span class="math inline">\(V_{\scriptsize \mbox{tot}}\)</span>. In practice, a more realistic measurements protocol is as follows: the size of the trees in a sample of size <span class="math inline">\(n&#39;&lt;N\)</span> is measured; both size and volume are measured in a subsample of <span class="math inline">\(n&lt;n&#39;\)</span> of this sample. The volume vs dbh regression (i.e. the volume tables) is constructed using subsample values; this is then used to estimate the volume of the sample then, by extrapolation, that of the entire stand. This sampling strategy is called <em>double sampling</em>. Its theory is described in Cochran <span class="citation">(<a href="bibliography.html#ref-cochran77" role="doc-biblioref">1977</a>, sec. 12.6)</span> and, more pragmatically, in Shiver &amp; Borders <span class="citation">(<a href="bibliography.html#ref-shiver96" role="doc-biblioref">1996</a>, chap. 7)</span>. Its use for estimating stand biomass was developed by <span class="citation">Cunia (<a href="bibliography.html#ref-cunia87c" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87c" role="doc-biblioref">d</a>)</span>; <span class="citation">Cunia (<a href="bibliography.html#ref-cunia87" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87" role="doc-biblioref">a</a>)</span>; <span class="citation">Cunia (<a href="bibliography.html#ref-cunia87d" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87d" role="doc-biblioref">b</a>)</span>.</p>
+<p>Finally, the properties of the regression estimator <a href="2-samp.html#eq:est">(2.4)</a> are well known in conventional sampling theory which does not require the hypothesis of a linear model <a href="2-samp.html#eq:MLex">(2.1)</a> but considers that the only source of variability is the sampling. In the case of a simple random sampling plan and a sufficiently large sample size <span class="math inline">\(n\)</span>, the variance of <span class="math inline">\(\bar{V}\)</span> in conventional theory is approximately <span class="citation">(Cochran <a href="bibliography.html#ref-cochran77" role="doc-biblioref">1977</a>, 195; Shiver and Borders <a href="bibliography.html#ref-shiver96" role="doc-biblioref">1996</a>, 181)</span>:
+<span class="math display" id="eq:VV">\[\begin{equation}
+\widehat{\mbox{Var}}(\bar{V})=\frac{1-n/N}{n(n-2)}\left\{
+\sum_{i=1}^n(V_i-\bar{V}_e)^2-\frac{\left[\sum_{i=1}^n
+(V_i-\bar{V}_e)(D_i^2H_i-\overline{D^2H}_e)\right]^2}{\sum_{i=1}^n
+(D_i^2H_i-\overline{D^2H}_e)^2}\right\}\tag{2.6}
+\end{equation}\]</span>
+and the semi-amplitude confidence interval at <span class="math inline">\(\alpha\)</span> (typically 5 %) of <span class="math inline">\(\bar{V}\)</span> is approximately <span class="citation">(p.80 Thompson <a href="bibliography.html#ref-thompson92" role="doc-biblioref">1992</a>; p.185 Shiver and Borders <a href="bibliography.html#ref-shiver96" role="doc-biblioref">1996</a>)</span>:
+<span class="math display">\[
+t_{n-2}\;\sqrt{\widehat{\mbox{Var}}(\bar{V})}
+\]</span>
+This last expression is considered as being more robust than expression <a href="2-samp.html#eq:icpop">(2.5)</a> when the super-population model <a href="2-samp.html#eq:MLex">(2.1)</a> strays from reality <span class="citation">(p.84 Thompson <a href="bibliography.html#ref-thompson92" role="doc-biblioref">1992</a>)</span>.</p>
+<p>In conclusion, this simple example shows both the advantages and limitations of sampling for the construction of volume tables: advantages because sampling theory provides us with the minimum number of trees that need to be measured to reach a given precision in our predictions, and thereby optimize the sampling plan; limitations because this reasoning assumes that the form of the volume tables (and that the underlying super-population model) is known in advance and that the tables will be used for a given application. Neither of these prerequisites is met in practice. Also, the calculations that are relatively simple in the case of the linear model we have just described rapidly become hopelessly complex for more realistic models.</p>
+
+</div>
+</div>
+<div id="sampling-to-construct-volume-tables" class="section level2">
+<h2><span class="header-section-number">2.2</span> Sampling to construct volume tables</h2>
+<p>As a first step, let us consider the problem of predicting the volume or biomass of a particular tree using volume or biomass tables. How many trees need to be measured to construct the tables (§ <a href="2-samp.html#size">2.2.1</a>)? Which trees in the stand should be selected for measurement? This second question begs another: how should we sort the trees in the sample in relation to volume table entry variables, starting with the tree size (§ <a href="2-samp.html#vent">2.2.2</a>)? How, if necessary, should we stratify the sample (§ <a href="2-samp.html#stratif">2.2.3</a>)? Is it best to select individuals far apart in the forest, or on the contrary inventory all the trees in a given plot (§ <a href="2-samp.html#sel">2.2.4</a>)?</p>
+<div id="size" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Number of trees</h3>
+<p>Given the limitations of the sampling theory, the number of measured trees for volume or biomass (in other terms, the sample size) is generally selected empirically, based on rules established by experience. A general principle is that, for any given precision, the more variable the material, the larger the sample size: smaller sample sizes are required for a plantation of clones than for a natural tropical forest, for a given species than for a group of species, for a 10 ha plot than for a natural area. In certain cases, such as for root biomass, it is the cost of the measurements that determines the sample size rather than the desired precision of the predictions: the number of trees selected corresponds to an acceptable amount of work to obtain the measurements. As a rough guide, when constructing volume tables, the Forester’s Memento <span class="citation">(CTFT <a href="bibliography.html#ref-ctft89" role="doc-biblioref">1989</a>, 256)</span> recommends measuring about 100 trees “for one or more stands of recent plantation over a small surface area (e.g. silviculture research plots)”. Pardé &amp; Bouchon <span class="citation">(<a href="bibliography.html#ref-parde88" role="doc-biblioref">1988</a>, 108)</span> recommended the sample sizes given in Table <a href="2-samp.html#tab:eff">2.1</a>, that depend on the surface area of the zone in which the volume tables are to be used. Different volume and biomass tables have been compiled by <span class="citation">Zianis et al. (<a href="bibliography.html#ref-zianis05" role="doc-biblioref">2005</a>)</span> for Europe and by <span class="citation">Henry et al. (<a href="bibliography.html#ref-henry11" role="doc-biblioref">2011</a>)</span> for sub-Saharan Africa. The sample sizes reported for the volume and biomass tables listed in these literature reviews give some idea of the sampling effort required. <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave04" role="doc-biblioref">2004</a>)</span> showed that when 300 trees were used to construct a biomass table, the resulting biomass estimation for a wet tropical stand (Barro Colorado Island in Panama) had a coefficient of variation of barely 3.1 %. This coefficient of variation rose above 10 % when the number of trees used to construct the biomass table fell below 50, with the coefficient of variation increasing approximately in proportion to <span class="math inline">\(1/\sqrt{n}\)</span> <span class="citation">(Figure 3 Chave et al. <a href="bibliography.html#ref-chave04" role="doc-biblioref">2004</a>)</span>. <span class="citation">Breugel et al. (<a href="bibliography.html#ref-vanbreugel11" role="doc-biblioref">2011</a>)</span> noted the same type of decrease in estimation precision with the sample size used to construct the biomass table, for <span class="math inline">\(n\)</span> between 49 and 195 trees.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:eff">Table 2.1: </span>Number of trees to be measured to establish a volume table for different surface areas over which the tables are to be used: recommendations by <span class="citation">Pardé and Bouchon (<a href="bibliography.html#ref-parde88" role="doc-biblioref">1988</a>)</span>.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Area
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(n\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Single, homogeneous stand
+</td>
+<td style="text-align:left;">
+30
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+15-ha plot
+</td>
+<td style="text-align:left;">
+100
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1000-ha forest
+</td>
+<td style="text-align:left;">
+400
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Natural area
+</td>
+<td style="text-align:left;">
+800
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Species area
+</td>
+<td style="text-align:left;">
+2000 to 3000
+</td>
+</tr>
+</tbody>
+</table>
+<p>The costlier an observation, in terms of measurement time and effort, the more the sampling plan tends to be determined by the sampling effort that workers are willing to make rather than by the desired precision of the estimation. As the above-ground biomass of a tree is more difficult to measure than the volume of its stem, biomass tables tend to be constructed using fewer observations than volume tables. Certain biomass tables are constructed from measurements in only a few trees <span class="citation">(8 trees for Brown et al. <a href="bibliography.html#ref-brown95" role="doc-biblioref">1995</a> in Brazil; 12 trees for Ebuy Alipade et al. <a href="bibliography.html#ref-ebuy11" role="doc-biblioref">2011</a> in the Democratic Republic of Congo; 14 trees for Deans, Moran, and Grace <a href="bibliography.html#ref-deans96" role="doc-biblioref">1996</a>; 15 trees for Russell <a href="bibliography.html#ref-russell83" role="doc-biblioref">1983</a> in Brazil)</span>.
+Root tables, that require an even greater measurement effort, are often based on even smaller sample sizes. Tables constructed using such small samples are generally unreliable, and in any case are valid only very locally. However, these small datasets can subsequently be grouped together into more impressive datasets that have advantages for model fitting (on condition that the variability induced by the merging of these datasets can be controlled by effect covariables: age, wood density, etc. or by stratification factors: species, type of plant formation <span class="math inline">\(\ldots\)</span>).</p>
+</div>
+<div id="vent" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Sorting trees</h3>
+<p>The sorting of trees in the sample on the basis of their size (and more generally on the basis of table entry variables) can in principle be optimized. For example, in the case of a linear regression, the semi-amplitude of the confidence interval at <span class="math inline">\(\alpha\)</span> of the regression slope is <span class="citation">(Saporta <a href="bibliography.html#ref-saporta90" role="doc-biblioref">1990</a>, 367)</span>:
+<span class="math display">\[
+t_{n-2}\ \frac{\hat{\sigma}}{S_X\sqrt{n}}
+\]</span>
+where <span class="math inline">\(t_{n-2}\)</span> is the quantile <span class="math inline">\(1-\alpha/2\)</span> of a Student’s distribution with <span class="math inline">\(n-2\)</span> degrees of freedom, <span class="math inline">\(\hat{\sigma}\)</span> is the empirical standard deviation of the model’s residuals, <span class="math inline">\(n\)</span> is sample size and <span class="math inline">\(S_X\)</span> is the empirical standard deviation of the entry variable <span class="math inline">\(X\)</span> in the sample:
+<span class="math display">\[
+S_X^2=\frac{1}{n}\sum_{i=1}^n(X_i-\bar{X})^2\quad\mbox{where}\quad
+\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i
+\]</span>
+Therefore, the higher the value of <span class="math inline">\(S_X\)</span> the more precise the estimation of the slope, which, for a set sample size, brings us back to a trees breakdown similar to that shown in Figure <a href="2-samp.html#fig:plan">2.2</a>. We have already seen the limitations of this reasoning: although the sampling plan that consists in selecting trees at the two extremities of the size gradient is optimal when the conditions of a linear relationship are met, it results in erroneous estimations when the relationship is not linear (Figure <a href="2-samp.html#fig:bad">2.3</a>). It is therefore preferable, in practice, to sample trees right across the size gradient in order to check the form of the relationship between their volume (or their mass) and their size.</p>
+<p>The theory of response surfaces <span class="citation">(Box and Draper <a href="bibliography.html#ref-box87" role="doc-biblioref">1987</a>; Goupy <a href="bibliography.html#ref-goupy99" role="doc-biblioref">1999</a>; Myers and Montgomery <a href="bibliography.html#ref-myers02" role="doc-biblioref">2002</a>)</span> can be used to optimize tree sorting on the basis of dbh (and more generally on the basis of table entry variables). We will not enter into the details of this theory here, but will simply sketch a few general principles. The first principle is to spread the tree size gradient of the sample as broadly as possible.</p>
+<p>If the volume (or mass) variance is constant for all tree sizes, the rule is to measure the same number of trees in each size category <span class="citation">(Pardé and Bouchon <a href="bibliography.html#ref-parde88" role="doc-biblioref">1988</a>, 108; CTFT <a href="bibliography.html#ref-ctft89" role="doc-biblioref">1989</a>, 256)</span>. It would be a mistake to form a sample by selecting in each size class a number of trees proportional to the magnitude of that class in the stand (in other words select the trees at random). But volume variance is rarely constant; generally it increases with tree size (heteroscedasticity of the residuals). The rule is therefore to increase sampling intensity in the most variable classes, thereby improving precision. In theory, the ideal approach is to measure a number of trees in a given size class proportional to the standard deviation of the tree volume in this class <span class="citation">(CTFT <a href="bibliography.html#ref-ctft89" role="doc-biblioref">1989</a>, 256)</span>. In practice, when the entry variable is dbh, an empirical rule consists in selecting the same number of trees per basal area growth class and thus better represent large diameter trees <span class="citation">(CTFT <a href="bibliography.html#ref-ctft89" role="doc-biblioref">1989</a>, 256–57)</span>.</p>
+<p>This reasoning may be extended to other effect variables. If the table entry variable is <span class="math inline">\(D^2H\)</span>, the trees may be sorted by <span class="math inline">\(D^2H\)</span>. For multispecific biomass tables, wood density <span class="math inline">\(\rho\)</span> is often used as the entry variable (with the specificity that it concerns the species not the tree). For multispecific tables using diameter <span class="math inline">\(D\)</span> and specific wood density <span class="math inline">\(\rho\)</span> as entry variable, adequate sorting of the trees in the sample consists in dividing them evenly by dbh class and wood density class.</p>
+</div>
+<div id="stratif" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> Stratification</h3>
+<p>We have already seen for the sorting of trees into size classes that selecting trees at random, and thereby giving all trees and equal <em>inclusion probability</em> is a suboptimal sampling plan. Stratification aims to take account of exogenous information to establish homogeneous sampling <em>strata</em> and thus improve the precision of our estimations. The principle, in the same manner as previously, is to increase the sampling intensity of the most variable strata (relative to the other strata). Again using the example given in section <a href="2-samp.html#simple">2.1</a>, the variance of the regression estimator <span class="math inline">\(\bar{V}\)</span> in the case of a stratified sampling approach becomes <span class="citation">(Cochran <a href="bibliography.html#ref-cochran77" role="doc-biblioref">1977</a>, 202)</span>:
+<span class="math display" id="eq:VVh">\[\begin{eqnarray}
+\widehat{\mbox{Var}}(\bar{V}) &amp;=&amp;
+\sum_h\left(\frac{N_h}{N}\right)^2
+\frac{1-n_h/N_h}{n_h(n_h-2)}\left\{
+\sum_{i=1}^{n_h}(V_{hi}-\bar{V}_{eh})^2\right.\nonumber
+\\ &amp;&amp; \left.-\frac{\left[\sum_{i=1}^{n_h}
+(V_{hi}-\bar{V}_{eh})(D_{hi}^2H_{hi}-\overline{D^2H}_{eh})\right]^2}
+{\sum_{i=1}^{n_h} (D_{hi}^2H_{hi}-
+\overline{D^2H}_{eh})^2}\right\}\tag{2.7}
+\end{eqnarray}\]</span>
+where <span class="math inline">\(h\)</span> is the stratum, <span class="math inline">\(N_h\)</span> the number of individuals in the stand that belong to stratum <span class="math inline">\(h\)</span>, <span class="math inline">\(n_h\)</span> is the number of individuals in the sample that belong to stratum <span class="math inline">\(h\)</span>, <span class="math inline">\(V_{ih}\)</span> is the volume of the <span class="math inline">\(i\)</span>th individual in stratum <span class="math inline">\(h\)</span> in the sample, <span class="math inline">\(\bar{V}_{eh}\)</span> is the empirical mean volume in stratum <span class="math inline">\(h\)</span> of the sample, etc. This formula replaces <a href="2-samp.html#eq:VV">(2.6)</a>. Let us now illustrate the precision gained by the stratification using a simple numerical example. Let us suppose, to simplify, that we have two strata, each corresponding to 50 % of the stand (such that <span class="math inline">\(N_1/N=N_2/N=0.5\)</span>), and that the sampling in each stratum is such that the second term between brackets in <a href="2-samp.html#eq:VVh">(2.7)</a> is negligible. Let us also assume that <span class="math inline">\(n_1\ll N_1\)</span> and <span class="math inline">\(n_2\ll N_2\)</span>. The variance of the regression estimator in this case is approximately proportional to:
+<span class="math display">\[
+\widehat{\mbox{Var}}(\bar{V})\propto \frac{1}{n_1-2}\left\{
+\frac{1}{n_1}\sum_{i=1}^{n_1}(V_{1i}-\bar{V}_{e1})^2\right\}
++\frac{1}{n_2-2}\left\{\frac{1}{n_2}\sum_{i=1}^{n_2}(V_{2i}
+-\bar{V}_{e2})^2\right\}
+\]</span>
+The terms in brackets represent within-strata variances in volume. Let us suppose that the standard deviation of the volume is 4 m<span class="math inline">\(^3\)</span> in the first stratum and 2 m<span class="math inline">\(^3\)</span> in the second. Total sample size is set at <span class="math inline">\(n_1+n_2=60\)</span> individuals.
+If we take account of the stratification, i.e. if we select the number of trees in each stratum in proportion to the frequency <span class="math inline">\(N_h/N\)</span> of the stratum in the stand, then in this case we have the same number of trees in each stratum of the sample: <span class="math inline">\(n_1=n_2=30\)</span> individuals. The variance of the regression estimator is therefore approximately:
+<span class="math display">\[
+\frac{4^2}{30-2}+\frac{2^2}{30-2}=0.71\mbox{ m}^6
+\]</span>
+By contrast, if we set the number of trees in each stratum in proportion to the standard deviation of the volume in the stratum, then: <span class="math inline">\(n_1=2n_2\)</span>, giving <span class="math inline">\(n_1=40\)</span> individuals and <span class="math inline">\(n_2=20\)</span> individuals. The variance of the regression estimator is therefore approximately:
+<span class="math display">\[
+\frac{4^2}{40-2}+\frac{2^2}{20-2}=0.64\mbox{ m}^6
+\]</span>
+It can thus be seen that from the standpoint of estimator variance, <span class="math inline">\(30+30\)</span> does not equal <span class="math inline">\(40+20\)</span>. We can also check that the minimum of the function that at <span class="math inline">\(n_1\)</span> associates <span class="math inline">\(16/(n_1-2)+4/(58-n_1)\)</span> is obtained for <span class="math inline">\(n_1=39.333\)</span>.</p>
+<p>From the standpoint of sampling theory, stratification aims to increase the precision of the estimation by fitting the sampling plan to the variability in each stratum. But from the standpoint of constructing volume tables, stratification has a second aim that is just as important as the first: check that the relationship between tree volume (or biomass) and size is the same in each stratum and, if needed, break down the tables into as many relations as necessary. This second point is implicit in equation <a href="2-samp.html#eq:VVh">(2.7)</a> that is based on the fitting of a different slope <span class="math inline">\(b\)</span> (see equation <a href="2-samp.html#eq:reg">(2.2)</a>) in each stratum.</p>
+<p>In short, stratification aims to explore the variability of the study area to (<em>i</em>) if necessary vary the form of the tables in accordance with the strata, and
+(<em>ii</em>) fit the sampling plan to the variability in the strata. Often when constructing volume tables, point (<em>i</em>) is predominant over point (<em>ii</em>), whereas the reverse is true in sampling theory. Figure <a href="2-samp.html#fig:mel">2.4</a> illustrated these two aims.</p>
+<div class="figure" style="text-align: center"><span id="fig:mel"></span>
+<img src="source/figures/badmel.png" alt="Predicting volume from tree size in two strata (black and white points): top left: the two strata corresponding to the two variances of the residuals (higher variance for the white than the black points) but the relationship is the same; top right: both the variance and the relation are different in the two strata; bottom: the situation is the same as top right but the second stratum has been subsampled such that we are led to believe that we are dealing with the same relation in the two strata." width="80%" />
+<p class="caption">
+Figure 2.4: Predicting volume from tree size in two strata (black and white points): top left: the two strata corresponding to the two variances of the residuals (higher variance for the white than the black points) but the relationship is the same; top right: both the variance and the relation are different in the two strata; bottom: the situation is the same as top right but the second stratum has been subsampled such that we are led to believe that we are dealing with the same relation in the two strata.
+</p>
+</div>
+<div id="stratification-factors" class="section level4 unnumbered">
+<h4>Stratification factors</h4>
+<p>Any factor that can explain the variability in the study area may be envisaged: stand age (above all for plantations), fertility, station, silvicultural treatments, variety or species, altitude, depth of the water table, etc. <span class="citation">(Pardé and Bouchon <a href="bibliography.html#ref-parde88" role="doc-biblioref">1988</a>, 106; CTFT <a href="bibliography.html#ref-ctft89" role="doc-biblioref">1989</a>, 255)</span>. Stratification factors may be nested: stratification according to morpho-pedological region, then according to fertility in each region, then according to age in each fertility class, then according to density in each age class. The “finenesse” of the stratification factors must also be adapted to match the context. The stratification factors employed are not the same when reasoning on a global scale like <span class="citation">Brown (<a href="bibliography.html#ref-brown97" role="doc-biblioref">1997</a>)</span>, on a landscape scale like <span class="citation">Breugel et al. (<a href="bibliography.html#ref-vanbreugel11" role="doc-biblioref">2011</a>)</span>, or on the scale of a plantation of clones like <span class="citation">Saint-André et al. (<a href="bibliography.html#ref-saintandre05" role="doc-biblioref">2005</a>)</span>. <span class="citation">Brown (<a href="bibliography.html#ref-brown97" role="doc-biblioref">1997</a>)</span> proposes “all-species” tables for climatic areas (dry forests, wet forests). At the other extreme, on an “eddy-correlation” plot, and with the aim of comparing NEP estimations, trees may be stratified according to plot age, season and flux tower “foot-print”.</p>
+</div>
+<div id="species-as-stratification-factor" class="section level4 unnumbered">
+<h4>Species as stratification factor</h4>
+<p>When dealing with natural formations that contain several species, the species may also be considered as stratification factor. Here, it is routine practice to construct volume tables separately for each species (or at least the most abundant species), then attempt to group gender or group together all the species (“all species” table). By merging the datasets we increase sample size which can be advantageous if this compensates for the increase in variability resulting from the mix of different species. In comparison with a mono-specific model, a multi-specific model introduces a prediction bias that may be viewed as between-species variability. As an illustration, <span class="citation">Breugel et al. (<a href="bibliography.html#ref-vanbreugel11" role="doc-biblioref">2011</a>)</span> quantified the prediction bias resulting from the aggregation of several species. Therefore, merging the data from several species is advantageous if the gain in within-species variability provided by this merger compensates for the between-species variability introduced. However, a check must be made that (<em>i</em>) this merger is meaningful and that (<em>ii</em>) the sample sizes for the different species are comparable (Figure <a href="2-samp.html#fig:mel">2.4</a>). If from the outset we are looking to construct “all species” volume table (which is often the case for natural stands), care must be taken to ensure that the individuals are selected for the sample independently of their species, such that the tables are not biased in favor of one particular species.</p>
+</div>
+<div id="allocating-to-strata" class="section level4 unnumbered">
+<h4>Allocating to strata</h4>
+<p>Once the strata have been identified, the sampling plan must be adapted to it following empirical rules. If we have an <em>a priori</em> estimation of volume variability (for volume tables) or biomass variability (for biomass tables) for each stratum, the empirical rule is to select a sampling intensity in proportion to the standard deviation in each stratum. If no <em>a priori</em> estimation of the variability is available, then a constant sampling intensity should be used in each stratum (this does not correspond to random sampling if the strata do not have the same frequency in the stand).</p>
+</div>
+<div id="parameterized-models" class="section level4 unnumbered">
+<h4>Parameterized models</h4>
+<p>Strata-related information is then incorporated into the volume model by establishing different models for each stratum. We can then test whether the models for the two strata are significantly different and, if appropriate, merge the two datasets to construct a single model. We could also construct a parameterized model from several models for different strata by following the principle of the mixed model: the model’s parameters themselves become functions of the variables defining the strata. These different points will be developed in the sections below, devoted to the actual construction of volume/biomass models. By way of an example, <span class="citation">Ketterings et al. (<a href="bibliography.html#ref-ketterings01" role="doc-biblioref">2001</a>)</span> developed individual, single-entry biomass models of the power form:
+<span class="math display">\[
+B=aD^b
+\]</span>
+where <span class="math inline">\(D\)</span> is the dbh and <span class="math inline">\(B\)</span> biomass of different trees of different species at different sites in the Jambi province of Sumatra in Indonesia. The site factor was then taken into account in parameter <span class="math inline">\(b\)</span> that was written <span class="math inline">\(b=2+c\)</span>, where <span class="math inline">\(c\)</span> is the parameter in the allometric equation that links height to dbh at each site: <span class="math inline">\(H=kD^c\)</span>. The species factor was taken into account in parameter <span class="math inline">\(a\)</span> that was written <span class="math inline">\(a=r\rho\)</span>, where <span class="math inline">\(\rho\)</span> is the wood density of the species and <span class="math inline">\(r\)</span> is a constant parameter. The model finally obtained, and valid for all the species at all the sites, is a parameterized model:
+<span class="math display">\[
+B=r\rho D^{2+c}
+\]</span></p>
+</div>
+</div>
+<div id="sel" class="section level3">
+<h3><span class="header-section-number">2.2.4</span> Selecting trees</h3>
+<p>Once the composition of the sample has been established, the trees must be identified and measured in the field. Given that these measurements involve a great deal of work and, when involving biomass, are destructive, the trees used must be selected with great care. A strategy adopted by some when constructing biomass tables is to cut all the trees within a given area (for example half a hectare). This has the advantage of “killing two birds with one stone” in that it provides both a biomass estimate for the stand and individual observations for the construction of a model. From a practical standpoint, the space created by the cutting of the first trees facilitates the subsequent cutting of the next. But this strategy has a major drawback: as the tree size distribution of the trees in the stand has only a very small likelihood of coinciding with the desired sorting of the trees in the sample by size class, the tree size distribution in the sample is suboptimal. The same applies for any factor in the structure of the sample (wood density classes, strata, etc.). Also, the scale of this disturbance in the stand may have unexpected consequences. For instance, <span class="citation">Djomo et al. (<a href="bibliography.html#ref-djomo10" role="doc-biblioref">2010</a>)</span> reported on a plot that was invaded by ants after the trees had been felled, to such an extent that it was impossible to make any tree biomass measurements. This tree selection strategy should therefore be avoided in areas infested by <em>Wasmannia</em> ants as their attacks are highly dangerous.</p>
+<p>Rather than selecting all the trees within a given area, preference should be given to selecting stems one by one depending on the requirements of sample constitution. This strategy may be longer to implement as it requires the identification of individual trees. In view of the difficulties inherent to measuring tree biomass (see chapter <a href="3-ter.html#ter">3</a>), preference should be given to trees that match the criteria of the sampling plan and are most easily accessible.</p>
+
+</div>
+</div>
+<div id="sampeup" class="section level2">
+<h2><span class="header-section-number">2.3</span> Sampling for stand estimations</h2>
+<p>Let us now consider the problem of predicting the volume or biomass of a stand. In a rigorously statistical manner, we need to consider the entire error propagation chain as described in Figure <a href="2-samp.html#fig:cha">2.1</a> <span class="citation">(Parresol <a href="bibliography.html#ref-parresol99" role="doc-biblioref">1999</a>)</span>. This raises questions of double sampling and regression estimator, as described in section <a href="2-samp.html#peup">2.1.2</a>. <span class="citation">Cunia (<a href="bibliography.html#ref-cunia87c" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87c" role="doc-biblioref">d</a>)</span>; <span class="citation">Cunia (<a href="bibliography.html#ref-cunia87" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87" role="doc-biblioref">a</a>)</span>; <span class="citation">Cunia (<a href="bibliography.html#ref-cunia87d" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87d" role="doc-biblioref">b</a>)</span>, <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave04" role="doc-biblioref">2004</a>)</span> and <span class="citation">Breugel et al. (<a href="bibliography.html#ref-vanbreugel11" role="doc-biblioref">2011</a>)</span> are rare examples where the entire error propagation chain was indeed taken into account, and where the biomass estimation error for a stand was related to the sample size used to construct the biomass table necessary for this estimation. In practice the problem is generally simplified by considering the table as exact and not suffering from any prediction error. This approximation — which disconnects the sampling of the stand used to predict its volume or biomass, from the sampling of the trees used to construct the model — reduces the sampling to a conventional forest inventory problem.</p>
+<p>We will not dwell here on this question of forest inventory, first because it is not central to this guide’s purpose, and second because entire books have already been devoted to the subject <span class="citation">(Loetsch and Haller <a href="bibliography.html#ref-loetsch73" role="doc-biblioref">1973</a>; Lanly <a href="bibliography.html#ref-lanly81" role="doc-biblioref">1981</a>; Vries <a href="bibliography.html#ref-vries86" role="doc-biblioref">1986</a>; Schreuder, Gregoire, and Wood <a href="bibliography.html#ref-schreuder93" role="doc-biblioref">1993</a>; Shiver and Borders <a href="bibliography.html#ref-shiver96" role="doc-biblioref">1996</a>; West <a href="bibliography.html#ref-west09" role="doc-biblioref">2009</a>)</span>. We will nevertheless describe a few developments relating to the estimation of stand biomass.</p>
+<div id="sampling-unit" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Sampling unit</h3>
+<p>Whereas it is entirely suitable, when constructing a biomass model, to select trees for the sample in an individual manner, this sampling strategy is unrealistic when estimating the biomass of a stand.
+We should rather in this case opt for a strategy consisting in measuring all the trees within a given area, and if necessary repeating this approach on another area to increase sample size. This area, or plot, thus becomes the sampling unit. Let <span class="math inline">\(n\)</span> be the number of plots inventoried, <span class="math inline">\(N_i\)</span> be the number of trees found in the <span class="math inline">\(i\)</span>th plot (<span class="math inline">\(i=1,\ \ldots,\ n\)</span>), and <span class="math inline">\(B_{ij}\)</span> be the biomass of the <span class="math inline">\(j\)</span>th tree in the <span class="math inline">\(i\)</span>th plot (<span class="math inline">\(j=1,\ \ldots,\ N_i\)</span>), calculated using the biomass model and the measured characteristics of the tree. The number <span class="math inline">\(N_i\)</span> is random, but for a given tree the prediction of <span class="math inline">\(B_{ij}\)</span> is considered as deterministic. The biomass of the <span class="math inline">\(i\)</span>th plot is therefore: <span class="math inline">\(B_i=\sum_{j=1}^{N_i}B_{ij}\)</span>.</p>
+<p>Let <span class="math inline">\(A\)</span> be the area of a sampling plot and <span class="math inline">\(\mathcal{A}\)</span> be the area of the stand. In the super-population model the biomass of the stand is therefore estimated by: <span class="math inline">\((\mathcal{A}/A)\ \bar{B}\)</span>, where <span class="math inline">\(\bar{B}=(\sum_{i=1}^nB_i)/n\)</span> is the mean biomass of a plot. It is generally considered that <span class="math inline">\(A\)</span> and <span class="math inline">\(\mathcal{A}\)</span> are accurately known parameters. The stand biomass estimation error therefore stems from that of mean biomass <span class="math inline">\(\bar{B}\)</span>.</p>
+</div>
+<div id="relation-between-coefficient-of-variation-and-plot-size" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Relation between coefficient of variation and plot size</h3>
+<p>According to the central limit theorem, the confidence interval at the threshold <span class="math inline">\(\alpha\)</span> for the expectation of plot biomass is approximately (this expression is accurate when the biomass follows a normal distribution, or when the number of plots approaches infinity) <span class="citation">(Saporta <a href="bibliography.html#ref-saporta90" role="doc-biblioref">1990</a>, 304)</span>:
+<span class="math display">\[
+\bar{B}\pm t_{n-1}\frac{S_B}{\sqrt{n-1}}
+\]</span>
+where <span class="math inline">\(t_{n-1}\)</span> is the quantile <span class="math inline">\(1-\alpha/2\)</span> of a Student distribution with <span class="math inline">\(n-1\)</span> degrees of freedom, and <span class="math inline">\(S_B\)</span> is the empirical standard deviation of plot biomass:
+<span class="math display">\[
+S_B^2=\frac{1}{n-1}\sum_{i=1}^n(B_i-\bar{B})^2
+\]</span>
+By definition, the precision of the estimation <span class="math inline">\(E\)</span> at the threshold <span class="math inline">\(\alpha\)</span> is the ratio of the semi-amplitude of the confidence interval at the threshold <span class="math inline">\(\alpha\)</span> to the mean biomass:
+<span class="math display" id="eq:E">\[\begin{equation}
+E=t_{n-1}\frac{S_B}{\bar{B}\sqrt{n-1}}=t_{n-1}\frac{\mathrm{CV}_B}{\sqrt{n-1}}\tag{2.8}
+\end{equation}\]</span>
+where <span class="math inline">\(\mathrm{CV}_B=S_B/\bar{B}\)</span> is the biomass coefficient of variation. By rounding <span class="math inline">\(t_{n-1}\)</span> to 2, the sample size <span class="math inline">\(n\)</span> required to reach a given estimation precision <span class="math inline">\(E\)</span> is therefore:
+<span class="math display">\[
+n\simeq\bigg(\frac{2\mathrm{CV}_B}{E}\bigg)^2+1
+\]</span>
+The biomass coefficient of variation for a plot of area <span class="math inline">\(A\)</span> is therefore the essential factor when constructing the sampling plan. Also, as area <span class="math inline">\(A\)</span> of the plots is not in principle known, the relation between the biomass coefficient of variation and the area <span class="math inline">\(A\)</span> of the plots must in fact be determined.</p>
+<p>The exact derivation of this relation between <span class="math inline">\(A\)</span> and <span class="math inline">\(\mathrm{CV}_B\)</span>
+needs a model capable of describing the spatial distribution of the trees. The theory of point processes meets this need <span class="citation">(Cressie <a href="bibliography.html#ref-cressie93" role="doc-biblioref">1993</a>; Stoyan and Stoyan <a href="bibliography.html#ref-stoyan94" role="doc-biblioref">1994</a>)</span>. It is feasible, in a point process, to calculate exactly the relationship between <span class="math inline">\(A\)</span> and <span class="math inline">\(\mathrm{CV}_B\)</span> but this is rather complex <span class="citation">(Picard, Sylla, and Nouvellet <a href="bibliography.html#ref-picard04d" role="doc-biblioref">2004</a>; Picard and Bar-Hen <a href="bibliography.html#ref-picard07d" role="doc-biblioref">2007</a>)</span>. The exact calculation brings two things to our notice:</p>
+<ol style="list-style-type: decimal">
+<li>although plot <em>shape</em> has an effect on the coefficient of variation <span class="citation">(as already demonstrated empirically, see Johnson and Hixon <a href="bibliography.html#ref-johnson52" role="doc-biblioref">1952</a>; Bormann <a href="bibliography.html#ref-bormann53" role="doc-biblioref">1953</a>)</span>, it has a negligible effect compared to plot size;</li>
+<li>the relation between <span class="math inline">\(A\)</span> and <span class="math inline">\(\mathrm{CV}_B\)</span> can be approached by a power relation <span class="citation">(Fairfield Smith <a href="bibliography.html#ref-fairfield38" role="doc-biblioref">1938</a>; Picard and Favier <a href="bibliography.html#ref-picard11b" role="doc-biblioref">2011</a>)</span>:
+<span class="math display">\[
+\mathrm{CV}_B=kA^{-c}
+\]</span>
+In practice it is this power relation that is most often specified. Intuitively, the value <span class="math inline">\(c=0.5\)</span> corresponds to a random spatial biomass distribution within the stand; a value of <span class="math inline">\(0&lt;c&lt;0.5\)</span> corresponds to an clustered spatial biomass distribution; and a value <span class="math inline">\(c&gt;0.5\)</span> corresponds to a regular spatial biomass distribution <span class="citation">(CTFT <a href="bibliography.html#ref-ctft89" role="doc-biblioref">1989</a>, 284)</span>. Using biomass data for a large plot in Paracou, French Guiana, <span class="citation">Wagner et al. (<a href="bibliography.html#ref-wagner10" role="doc-biblioref">2010</a>)</span> found:
+<span class="math display">\[
+\mathrm{CV}_B=557\times A^{-0.430}\qquad\mbox{($A$ in m$^2$,
+CV$_B$ in \%)}
+\]</span>
+If compared to the above definition, this corresponds to a slightly aggregated spatial biomass distribution. In the Brazilian Amazon, <span class="citation">Keller, Palace, and Hurtt (<a href="bibliography.html#ref-keller01" role="doc-biblioref">2001</a>)</span> found the following relationship (fitted to the data in their Figure 4 with
+<span class="math inline">\(R^2=0.993\)</span> on log-transformed data):
+<span class="math display">\[
+\mathrm{CV}_B=706\times A^{-0.350}\qquad\mbox{($A$ in m$^2$,
+CV$_B$ in \%)}
+\]</span>
+The lowest (absolute) value for the exponent is indicative of a more aggregated distribution than in French Guiana. A similar study was conducted by <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>)</span>
+using data from a 50 ha plot on Barro Colorado Island, Panama. <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>)</span> in their Table 5 reported 95 %
+interval amplitude values not for the biomass expectation of a plot, but for biomass expectation by unit area. The amplitude of the 95 % confidence interval for the biomass expectation of a plot therefore corresponds to the amplitude reported by <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>)</span> times plot area, i.e.:
+<span class="math display">\[
+2t_{n-1}\frac{S_B}{\sqrt{n-1}}=\Delta\times A
+\]</span>
+where <span class="math inline">\(\Delta\)</span> is the amplitude of the 95 % confidence interval reported by <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>)</span> in their Table 5. We can deduce from this:
+<span class="math display">\[
+\mathrm{CV}_B=\frac{S_B}{\bar{B}}=\frac{\Delta
+A\sqrt{n-1}}{2t_{n-1}\bar{B}}=\frac{\Delta
+\sqrt{n-1}}{2t_{n-1}\mu}
+\]</span>
+where <span class="math inline">\(\mu\)</span> is mean biomass per unit area, and reported as 274~Mg ha<span class="math inline">\(^{-1}\)</span> in the study by <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>)</span>. Table <a href="2-samp.html#tab:c03">2.2</a> supplements Table 5 by <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>)</span> with the calculated value of <span class="math inline">\(\mathrm{CV}_B\)</span>. The <span class="math inline">\(\mathrm{CV}_B\)</span>
+values given in Table <a href="2-samp.html#tab:c03">2.2</a> closely fit (<span class="math inline">\(R^2=0.998\)</span> on log-transformed data) the following power relation with plot size:
+<span class="math display">\[
+\mathrm{CV}_B=942\times A^{-0,450}\qquad\mbox{($A$ in m$^2$,
+CV$_B$ in \%)}
+\]</span>
+Biomass variability (expressed by the value of the multiplier <span class="math inline">\(k=942\)</span>) was greater than at Paracou, but the spatial structure of the biomass (expressed by the exponent <span class="math inline">\(c=0.45\)</span>) fairly similar to that observed in Paracou by <span class="citation">Wagner et al. (<a href="bibliography.html#ref-wagner10" role="doc-biblioref">2010</a>)</span>. Also, the fact that <span class="math inline">\(c\)</span> approached 0.5 showed that the biomass was only slightly spatially aggregated. <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>)</span> underlined that there was no significant spatial autocorrelation of the biomass (which would correspond to <span class="math inline">\(c=0.5\)</span>, or to a constant value of <span class="math inline">\(\Delta\)</span>).</li>
+</ol>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:c03">Table 2.2: </span>Coefficient of variation in relation to plot size: data drawn from Table 5 by <span class="citation">Chave et al. (<a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>)</span> for Barro Colorado Island, Panama.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(n\)</span>
+</th>
+<th style="text-align:right;">
+
+</th>
+<th style="text-align:right;">
+
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+5000
+</td>
+<td style="text-align:right;">
+17.4
+</td>
+<td style="text-align:right;">
+114.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+2500
+</td>
+<td style="text-align:right;">
+18.7
+</td>
+<td style="text-align:right;">
+87.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+400
+</td>
+<td style="text-align:right;">
+1250
+</td>
+<td style="text-align:right;">
+20.0
+</td>
+<td style="text-align:right;">
+65.7
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+21.4
+</td>
+<td style="text-align:right;">
+44.4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2500
+</td>
+<td style="text-align:right;">
+2900
+</td>
+<td style="text-align:right;">
+20.1
+</td>
+<td style="text-align:right;">
+26.2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5000
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+22.4
+</td>
+<td style="text-align:right;">
+20.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10000
+</td>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+23.5
+</td>
+<td style="text-align:right;">
+14.9
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="selecting-plot-size" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Selecting plot size</h3>
+<p>The size of sampling plots may be selected in such a way to optimize the precision of the estimation for a given sampling effort <span class="citation">(Bormann <a href="bibliography.html#ref-bormann53" role="doc-biblioref">1953</a>; Schreuder, Banyard, and Brink <a href="bibliography.html#ref-schreuder87" role="doc-biblioref">1987</a>; Hebert, Rondeux, and Laurent <a href="bibliography.html#ref-hebert88" role="doc-biblioref">1988</a>)</span>, or in a manner to minimize sampling effort for a given estimation precision <span class="citation">(Zeide <a href="bibliography.html#ref-zeide80" role="doc-biblioref">1980</a>; Gambill, Wiant, and Yandle <a href="bibliography.html#ref-gambill85" role="doc-biblioref">1985</a>; Cunia <a href="bibliography.html#ref-cunia87" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87" role="doc-biblioref">a</a>, <a href="bibliography.html#ref-cunia87d" role="doc-biblioref">1987</a><a href="bibliography.html#ref-cunia87d" role="doc-biblioref">b</a>)</span>.
+These two points of view are dual one to the other and lead to the same optimum. The sampling effort may be quantified simply by the sampling rate <span class="math inline">\(n\times A/\mathcal{A}\)</span> or, more realistically, by a cost whose expression is more complex. Let us examine these two options.</p>
+<div id="fixed-sampling-rate" class="section level4 unnumbered">
+<h4>Fixed sampling rate</h4>
+<p>At a constant sampling rate, the area <span class="math inline">\(A\)</span> and the number <span class="math inline">\(n\)</span> of sampling plots are linked by an inversely proportional relation: <span class="math inline">\(n\propto1/A\)</span>. Choosing appropriate plot size boils down to the following question: “is it better to select a few large plots or many small plots?”, also called the SLOSS compromise <span class="citation">(for “single large or several small”; Lahti and Ranta <a href="bibliography.html#ref-lahti85" role="doc-biblioref">1985</a>)</span>. If we calculate the relation <span class="math inline">\(n\propto1/A\)</span> in <a href="2-samp.html#eq:E">(2.8)</a> (and considering that <span class="math inline">\(t_{n-1}/\sqrt{n-1}\)</span> is little different from <span class="math inline">\(2/\sqrt{n}\)</span>):
+<span class="math display">\[
+E\propto2\;\mathrm{CV}_B\;\sqrt{A}
+\]</span>
+If the spatial distribution of the biomass is random, <span class="math inline">\(\mathrm{CV}_B\propto A^{-0,5}\)</span> and therefore the precision of the estimation <span class="math inline">\(E\)</span> is independent of the area <span class="math inline">\(A\)</span> of the plots. If the spatial distribution of the biomass is aggregated, <span class="math inline">\(\mathrm{CV}_B\propto A^{-c}\)</span> with <span class="math inline">\(c&lt;0.5\)</span> and therefore <span class="math inline">\(E\propto A^{0,5-c}\)</span> with <span class="math inline">\(0.5-c&gt;0\)</span>: then the smaller the plot area <span class="math inline">\(A\)</span>, the greater the precision of the estimation (low value of <span class="math inline">\(E\)</span>). In this case, and with a fixed sampling rate, it is therefore better to select several small plots than a few large plots. This is demonstrated by Table <a href="2-samp.html#tab:c03">2.2</a>, where we can see that the value of <span class="math inline">\(\Delta\)</span> decreases when <span class="math inline">\(A\)</span> decreases (this decrease is only slight as <span class="math inline">\(c\)</span> is close to 0.5). If the spatial distribution of the biomass is regular, <span class="math inline">\(\mathrm{CV}_B\propto A^{-c}\)</span> with <span class="math inline">\(c&gt;0.5\)</span> and therefore <span class="math inline">\(E\propto A^{0,5-c}\)</span> with <span class="math inline">\(0.5-c&lt;0\)</span>: the larger the plot area <span class="math inline">\(A\)</span> the better the precision of the estimation (low value of <span class="math inline">\(E\)</span>). In this case, and with a fixed sampling rate, it is therefore better to select a few large plots than many small plots.</p>
+<p>The parameters measured in biology in most cases have an aggregated spatial distribution (<span class="math inline">\(c&lt;0.5\)</span>), sometimes random distribution (<span class="math inline">\(c=0.5\)</span>), and only rarely a regular distribution (<span class="math inline">\(c&gt;0.5\)</span>) <span class="citation">(Fairfield Smith <a href="bibliography.html#ref-fairfield38" role="doc-biblioref">1938</a>)</span>. In other words, the SLOSS compromise is in most cases resolved to the benefit of a multitude of small plots. If we push this reasoning to its limit, we see that the precision of the estimation would be optimal (<span class="math inline">\(E\)</span> minimal) for <span class="math inline">\(A=0\)</span>, i.e. by selecting an infinite number of plots of zero size! This illustrates the limits of this reasoning. When we quantify the sampling effort by the sampling rate <span class="math inline">\(nA/\mathcal{A}\)</span>, we assume implicitly that the sampling cost, i.e. the time or money necessary for the sampling, is proportional to <span class="math inline">\(nA\)</span>. This means that we consider only an area-based cost, i.e. a sampling cost that is proportional to the inventoried area.</p>
+</div>
+<div id="sampling-cost" class="section level4 unnumbered">
+<h4>Sampling cost</h4>
+<p>In actual fact, the area-based cost is only one component of the sampling cost. Strictly speaking, the inventory made of the sampling plots, and whose duration is indeed proportional to the inventoried area, is not the only task that takes time. Staking out the boundaries of the sampling plots also takes time. And this time is proportional to the cumulated length of their boundaries: this is therefore a linear cost. Moving from one plot to another also takes time. It is therefore more realistic to measure sampling effort by a cost that includes all these tasks rather than simply by the sampling rate. If we measure this cost in terms of time, and if the sampling plots are square, the sampling cost would for example be <span class="citation">(Zeide <a href="bibliography.html#ref-zeide80" role="doc-biblioref">1980</a>; Gambill, Wiant, and Yandle <a href="bibliography.html#ref-gambill85" role="doc-biblioref">1985</a>)</span>:
+<span class="math display">\[
+C=\alpha\;nA+\beta\times4n\sqrt{A}+\gamma\;d(n,A)
+\]</span>
+where <span class="math inline">\(\alpha\)</span> is inventory time by unit area, <span class="math inline">\(\beta\)</span> is staking out time by unit length (<span class="math inline">\(4\sqrt{A}\)</span> corresponds to the boundaries of a square plot of area <span class="math inline">\(A\)</span>), <span class="math inline">\(\gamma\)</span> is travel speed, and <span class="math inline">\(d(n,A)\)</span>
+is the length of the path linking the <span class="math inline">\(n\)</span> sampling plots. This sampling cost expression can be further supplemented to take account of other tasks. The reasoning followed in the previous section consisted of <span class="math inline">\(\beta=\gamma=0\)</span>. If <span class="math inline">\(\beta&gt;0\)</span> and <span class="math inline">\(\gamma&gt;0\)</span>, the solution to the SLOSS compromise is now no longer <span class="math inline">\(A=0\)</span> in the case of aggregated spatial biomass distribution (<span class="math inline">\(c&lt;0.5\)</span>).</p>
+</div>
+<div id="other-constraints" class="section level4 unnumbered">
+<h4>Other constraints</h4>
+<p>However, it would be too restrictive to limit the question of sampling the biomass of a stand to a question of estimation precision. Often, the question is not limited to estimating a stand’s biomass since a number of goals are pursued simultaneously. For instance, we may also be interesting in determining biomass variations over time. Mortality processes must also be considered in this case, and the inventoried area may therefore be far larger <span class="citation">(Chave et al. <a href="bibliography.html#ref-chave03" role="doc-biblioref">2003</a>, <a href="bibliography.html#ref-chave04" role="doc-biblioref">2004</a>; Rutishauser et al. <a href="bibliography.html#ref-rutishauser10" role="doc-biblioref">2010</a>; Wagner et al. <a href="bibliography.html#ref-wagner10" role="doc-biblioref">2010</a>)</span>. Or we may be looking to estimate plot biomass in order to determine a relation with satellite image indices and thereby extrapolate the biomass estimation to a landscape scale. In this case the area of the sampling plots is also constrained by the resolution of the satellite images and by the smallest area necessary to calculate satellite remote sensing indices.</p>
+<p>Additionally, the type of sampling plan implicitly considered here, i.e. a simple random plan using plots of a fixed size, is rarely the most efficient (<em>i.e.</em> with the best estimation precision for a given sampling cost). On the scale of a landscape consisting of different forest types, other sampling strategies may turn out to be more efficient <span class="citation">(Whraton and Cunia <a href="bibliography.html#ref-whraton87" role="doc-biblioref">1987</a>; Breugel et al. <a href="bibliography.html#ref-vanbreugel11" role="doc-biblioref">2011</a>)</span>. Compared to a simple random plan with a single plot size, a stratified sampling plan will be more costly (as stratification comes at a cost) but would provide a more precise estimation. A cluster sampling plan is less costly (less traveling) but provides a less precise estimation. Specific forest inventory techniques such as distance sampling <span class="citation">(S. Magnussen, Kleinn, and Picard <a href="bibliography.html#ref-magnussen08" role="doc-biblioref">2008</a>; Steen Magnussen, Picard, and Kleinn <a href="bibliography.html#ref-magnussen08b" role="doc-biblioref">2008</a>; Picard and Bar-Hen <a href="bibliography.html#ref-picard07d" role="doc-biblioref">2007</a>; Picard, Kouyaté, and Dessard <a href="bibliography.html#ref-picard05" role="doc-biblioref">2005</a>)</span> or using Bitterlich’s relascope <span class="citation">(Schreuder, Gregoire, and Wood <a href="bibliography.html#ref-schreuder93" role="doc-biblioref">1993</a>; West <a href="bibliography.html#ref-west09" role="doc-biblioref">2009</a>)</span>, share the feature of being based on plots of variable sizes, and can also be more efficient alternatives to fixed-size plot approaches.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>The terms in italics are those used in sampling theory; a definition of these terms may be found, for example, in appendix 2 of <span class="citation">Bellefontaine et al. (<a href="bibliography.html#ref-bellefontaine01" role="doc-biblioref">2001</a>)</span>.<a href="2-samp.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="1-biol.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="3-ter.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
