@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Graphical exploration of the data | Manual for building tree volume and biomass allometric equations</title>
+  <meta name="description" content="5 Graphical exploration of the data | Manual for building tree volume and biomass allometric equations" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Graphical exploration of the data | Manual for building tree volume and biomass allometric equations" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Graphical exploration of the data | Manual for building tree volume and biomass allometric equations" />
+  
+  
+  
+
+<meta name="author" content="Nicolas Picard, Laurent Saint-André, Matieu Henry" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="4-don.html"/>
+<link rel="next" href="6-fit.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./index.html"><b>Manual for building tree volume and biomass allometric equations </b></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Cover page</a></li>
+<li class="chapter" data-level="" data-path="note-on-the-version-2.html"><a href="note-on-the-version-2.html"><i class="fa fa-check"></i>Note on the version 2</a></li>
+<li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="preamble.html"><a href="preamble.html"><i class="fa fa-check"></i>Preamble</a></li>
+<li class="chapter" data-level="1" data-path="1-biol.html"><a href="1-biol.html"><i class="fa fa-check"></i><b>1</b> The foundations of biomass estimations</a><ul>
+<li class="chapter" data-level="1.1" data-path="1-biol.html"><a href="1-biol.html#biology-eichhorns-rule-site-index-etc."><i class="fa fa-check"></i><b>1.1</b> “Biology”: Eichhorn’s rule, site index, etc.</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="1-biol.html"><a href="1-biol.html#even-aged-monospecific-stands"><i class="fa fa-check"></i><b>1.1.1</b> Even-aged, monospecific stands</a></li>
+<li class="chapter" data-level="1.1.2" data-path="1-biol.html"><a href="1-biol.html#uneven-aged-andor-multispecific-stands"><i class="fa fa-check"></i><b>1.1.2</b> Uneven-aged and/or multispecific stands</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="1-biol.html"><a href="1-biol.html#selecting-a-method"><i class="fa fa-check"></i><b>1.2</b> Selecting a method</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="1-biol.html"><a href="1-biol.html#estimating-the-biomass-of-a-biome"><i class="fa fa-check"></i><b>1.2.1</b> Estimating the biomass of a biome</a></li>
+<li class="chapter" data-level="1.2.2" data-path="1-biol.html"><a href="1-biol.html#estimating-the-biomass-of-a-forest-or-a-set-of-forests"><i class="fa fa-check"></i><b>1.2.2</b> Estimating the biomass of a forest or a set of forests</a></li>
+<li class="chapter" data-level="1.2.3" data-path="1-biol.html"><a href="1-biol.html#measuring-the-biomass-of-a-tree"><i class="fa fa-check"></i><b>1.2.3</b> Measuring the biomass of a tree</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="2-samp.html"><a href="2-samp.html"><i class="fa fa-check"></i><b>2</b> Sampling and stratification</a><ul>
+<li class="chapter" data-level="2.1" data-path="2-samp.html"><a href="2-samp.html#simple"><i class="fa fa-check"></i><b>2.1</b> Sampling for a simple linear regression</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="2-samp.html"><a href="2-samp.html#predicting-the-volume-of-a-particular-tree"><i class="fa fa-check"></i><b>2.1.1</b> Predicting the volume of a particular tree</a></li>
+<li class="chapter" data-level="2.1.2" data-path="2-samp.html"><a href="2-samp.html#peup"><i class="fa fa-check"></i><b>2.1.2</b> Predicting the volume of a stand</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="2-samp.html"><a href="2-samp.html#sampling-to-construct-volume-tables"><i class="fa fa-check"></i><b>2.2</b> Sampling to construct volume tables</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="2-samp.html"><a href="2-samp.html#size"><i class="fa fa-check"></i><b>2.2.1</b> Number of trees</a></li>
+<li class="chapter" data-level="2.2.2" data-path="2-samp.html"><a href="2-samp.html#vent"><i class="fa fa-check"></i><b>2.2.2</b> Sorting trees</a></li>
+<li class="chapter" data-level="2.2.3" data-path="2-samp.html"><a href="2-samp.html#stratif"><i class="fa fa-check"></i><b>2.2.3</b> Stratification</a></li>
+<li class="chapter" data-level="2.2.4" data-path="2-samp.html"><a href="2-samp.html#sel"><i class="fa fa-check"></i><b>2.2.4</b> Selecting trees</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="2-samp.html"><a href="2-samp.html#sampeup"><i class="fa fa-check"></i><b>2.3</b> Sampling for stand estimations</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="2-samp.html"><a href="2-samp.html#sampling-unit"><i class="fa fa-check"></i><b>2.3.1</b> Sampling unit</a></li>
+<li class="chapter" data-level="2.3.2" data-path="2-samp.html"><a href="2-samp.html#relation-between-coefficient-of-variation-and-plot-size"><i class="fa fa-check"></i><b>2.3.2</b> Relation between coefficient of variation and plot size</a></li>
+<li class="chapter" data-level="2.3.3" data-path="2-samp.html"><a href="2-samp.html#selecting-plot-size"><i class="fa fa-check"></i><b>2.3.3</b> Selecting plot size</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="3-ter.html"><a href="3-ter.html"><i class="fa fa-check"></i><b>3</b> In the field</a><ul>
+<li class="chapter" data-level="3.1" data-path="3-ter.html"><a href="3-ter.html#pese"><i class="fa fa-check"></i><b>3.1</b> Weighing all compartments directly in the field</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="3-ter.html"><a href="3-ter.html#in-the-field"><i class="fa fa-check"></i><b>3.1.1</b> In the field</a></li>
+<li class="chapter" data-level="3.1.2" data-path="3-ter.html"><a href="3-ter.html#lab1"><i class="fa fa-check"></i><b>3.1.2</b> In the laboratory</a></li>
+<li class="chapter" data-level="3.1.3" data-path="3-ter.html"><a href="3-ter.html#calculations"><i class="fa fa-check"></i><b>3.1.3</b> Calculations</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="3-ter.html"><a href="3-ter.html#direct-weighing-for-certain-compartments-and-volume-and-density-measurements-for-others"><i class="fa fa-check"></i><b>3.2</b> Direct weighing for certain compartments and volume and density measurements for others</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="3-ter.html"><a href="3-ter.html#in-the-field-case-of-semi-destructive-measurements"><i class="fa fa-check"></i><b>3.2.1</b> In the field: case of semi-destructive measurements</a></li>
+<li class="chapter" data-level="3.2.2" data-path="3-ter.html"><a href="3-ter.html#lab2"><i class="fa fa-check"></i><b>3.2.2</b> In the laboratory</a></li>
+<li class="chapter" data-level="3.2.3" data-path="3-ter.html"><a href="3-ter.html#calculations-1"><i class="fa fa-check"></i><b>3.2.3</b> Calculations</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="3-ter.html"><a href="3-ter.html#partial-weighings-in-the-field"><i class="fa fa-check"></i><b>3.3</b> Partial weighings in the field</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="3-ter.html"><a href="3-ter.html#trees-less-than-20-cm-in-diameter"><i class="fa fa-check"></i><b>3.3.1</b> Trees less than 20 cm in diameter</a></li>
+<li class="chapter" data-level="3.3.2" data-path="3-ter.html"><a href="3-ter.html#trees-more-than-20-cm-in-diameter"><i class="fa fa-check"></i><b>3.3.2</b> Trees more than 20 cm in diameter</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="3-ter.html"><a href="3-ter.html#measuring-roots"><i class="fa fa-check"></i><b>3.4</b> Measuring roots</a></li>
+<li class="chapter" data-level="3.5" data-path="3-ter.html"><a href="3-ter.html#matos"><i class="fa fa-check"></i><b>3.5</b> Recommended equipment</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="3-ter.html"><a href="3-ter.html#heavy-machinery-and-vehicles"><i class="fa fa-check"></i><b>3.5.1</b> Heavy machinery and vehicles</a></li>
+<li class="chapter" data-level="3.5.2" data-path="3-ter.html"><a href="3-ter.html#general-equipment"><i class="fa fa-check"></i><b>3.5.2</b> General equipment</a></li>
+<li class="chapter" data-level="3.5.3" data-path="3-ter.html"><a href="3-ter.html#computer-entering-field-data"><i class="fa fa-check"></i><b>3.5.3</b> Computer-entering field data</a></li>
+<li class="chapter" data-level="3.5.4" data-path="3-ter.html"><a href="3-ter.html#laboratory-equipment"><i class="fa fa-check"></i><b>3.5.4</b> Laboratory equipment</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="3-ter.html"><a href="3-ter.html#equip"><i class="fa fa-check"></i><b>3.6</b> Recommended field team composition</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="4-don.html"><a href="4-don.html"><i class="fa fa-check"></i><b>4</b> Entering and formatting data</a><ul>
+<li class="chapter" data-level="4.1" data-path="4-don.html"><a href="4-don.html#data-entry"><i class="fa fa-check"></i><b>4.1</b> Data entry</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="4-don.html"><a href="4-don.html#data-entry-errors"><i class="fa fa-check"></i><b>4.1.1</b> Data entry errors</a></li>
+<li class="chapter" data-level="4.1.2" data-path="4-don.html"><a href="4-don.html#meta-information"><i class="fa fa-check"></i><b>4.1.2</b> Meta-information</a></li>
+<li class="chapter" data-level="4.1.3" data-path="4-don.html"><a href="4-don.html#nested-levels"><i class="fa fa-check"></i><b>4.1.3</b> Nested levels</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="4-don.html"><a href="4-don.html#data-cleansing"><i class="fa fa-check"></i><b>4.2</b> Data cleansing</a></li>
+<li class="chapter" data-level="4.3" data-path="4-don.html"><a href="4-don.html#data-formatting"><i class="fa fa-check"></i><b>4.3</b> Data formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="5-explo.html"><a href="5-explo.html"><i class="fa fa-check"></i><b>5</b> Graphical exploration of the data</a><ul>
+<li class="chapter" data-level="5.1" data-path="5-explo.html"><a href="5-explo.html#exploring-the-mean-relation"><i class="fa fa-check"></i><b>5.1</b> Exploring the mean relation</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="5-explo.html"><a href="5-explo.html#plus"><i class="fa fa-check"></i><b>5.1.1</b> When there is more than one effect variable</a></li>
+<li class="chapter" data-level="5.1.2" data-path="5-explo.html"><a href="5-explo.html#determining-whether-or-not-a-relation-is-adequate"><i class="fa fa-check"></i><b>5.1.2</b> Determining whether or not a relation is adequate</a></li>
+<li class="chapter" data-level="5.1.3" data-path="5-explo.html"><a href="5-explo.html#catalog-of-primitives"><i class="fa fa-check"></i><b>5.1.3</b> Catalog of primitives</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="5-explo.html"><a href="5-explo.html#exploring-variance"><i class="fa fa-check"></i><b>5.2</b> Exploring variance</a></li>
+<li class="chapter" data-level="5.3" data-path="5-explo.html"><a href="5-explo.html#exploring-doesnt-mean-selecting"><i class="fa fa-check"></i><b>5.3</b> Exploring doesn’t mean selecting</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="6-fit.html"><a href="6-fit.html"><i class="fa fa-check"></i><b>6</b> Model fitting</a><ul>
+<li class="chapter" data-level="6.1" data-path="6-fit.html"><a href="6-fit.html#fitting-a-linear-model"><i class="fa fa-check"></i><b>6.1</b> Fitting a linear model</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="6-fit.html"><a href="6-fit.html#simple-linear-regression"><i class="fa fa-check"></i><b>6.1.1</b> Simple linear regression</a></li>
+<li class="chapter" data-level="6.1.2" data-path="6-fit.html"><a href="6-fit.html#multiple-regression"><i class="fa fa-check"></i><b>6.1.2</b> Multiple regression</a></li>
+<li class="chapter" data-level="6.1.3" data-path="6-fit.html"><a href="6-fit.html#pond"><i class="fa fa-check"></i><b>6.1.3</b> Weighted regression</a></li>
+<li class="chapter" data-level="6.1.4" data-path="6-fit.html"><a href="6-fit.html#lme"><i class="fa fa-check"></i><b>6.1.4</b> Linear regression with variance model</a></li>
+<li class="chapter" data-level="6.1.5" data-path="6-fit.html"><a href="6-fit.html#trans"><i class="fa fa-check"></i><b>6.1.5</b> Transforming variables</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="6-fit.html"><a href="6-fit.html#nlm"><i class="fa fa-check"></i><b>6.2</b> Fitting a non-linear model</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="6-fit.html"><a href="6-fit.html#exponent-known"><i class="fa fa-check"></i><b>6.2.1</b> Exponent known</a></li>
+<li class="chapter" data-level="6.2.2" data-path="6-fit.html"><a href="6-fit.html#estimating-the-exponent"><i class="fa fa-check"></i><b>6.2.2</b> Estimating the exponent</a></li>
+<li class="chapter" data-level="6.2.3" data-path="6-fit.html"><a href="6-fit.html#algo"><i class="fa fa-check"></i><b>6.2.3</b> Numerical optimization</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="6-fit.html"><a href="6-fit.html#select"><i class="fa fa-check"></i><b>6.3</b> Selecting variables and models</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="6-fit.html"><a href="6-fit.html#selecting-variables"><i class="fa fa-check"></i><b>6.3.1</b> Selecting variables</a></li>
+<li class="chapter" data-level="6.3.2" data-path="6-fit.html"><a href="6-fit.html#selmod"><i class="fa fa-check"></i><b>6.3.2</b> Selecting models</a></li>
+<li class="chapter" data-level="6.3.3" data-path="6-fit.html"><a href="6-fit.html#choosing-a-fitting-method"><i class="fa fa-check"></i><b>6.3.3</b> Choosing a fitting method</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="6-fit.html"><a href="6-fit.html#stratification-and-aggregation-factors"><i class="fa fa-check"></i><b>6.4</b> Stratification and aggregation factors</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="6-fit.html"><a href="6-fit.html#stdat"><i class="fa fa-check"></i><b>6.4.1</b> Stratifying data</a></li>
+<li class="chapter" data-level="6.4.2" data-path="6-fit.html"><a href="6-fit.html#cmpt"><i class="fa fa-check"></i><b>6.4.2</b> Tree compartments</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="7-util.html"><a href="7-util.html"><i class="fa fa-check"></i><b>7</b> Uses and prediction</a><ul>
+<li class="chapter" data-level="7.1" data-path="7-util.html"><a href="7-util.html#val"><i class="fa fa-check"></i><b>7.1</b> Validating a model</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="7-util.html"><a href="7-util.html#Ival"><i class="fa fa-check"></i><b>7.1.1</b> Validation criteria</a></li>
+<li class="chapter" data-level="7.1.2" data-path="7-util.html"><a href="7-util.html#cross-validation"><i class="fa fa-check"></i><b>7.1.2</b> Cross validation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="7-util.html"><a href="7-util.html#BVpred"><i class="fa fa-check"></i><b>7.2</b> Predicting the volume or biomass of a tree</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="7-util.html"><a href="7-util.html#plm"><i class="fa fa-check"></i><b>7.2.1</b> Prediction: linear model</a></li>
+<li class="chapter" data-level="7.2.2" data-path="7-util.html"><a href="7-util.html#pnls"><i class="fa fa-check"></i><b>7.2.2</b> Prediction: case of a non-linear model</a></li>
+<li class="chapter" data-level="7.2.3" data-path="7-util.html"><a href="7-util.html#papp"><i class="fa fa-check"></i><b>7.2.3</b> Approximated confidence intervals</a></li>
+<li class="chapter" data-level="7.2.4" data-path="7-util.html"><a href="7-util.html#invtra"><i class="fa fa-check"></i><b>7.2.4</b> Inverse variables transformation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="7-util.html"><a href="7-util.html#predicting-the-volume-or-biomass-of-a-stand"><i class="fa fa-check"></i><b>7.3</b> Predicting the volume or biomass of a stand</a></li>
+<li class="chapter" data-level="7.4" data-path="7-util.html"><a href="7-util.html#BEF"><i class="fa fa-check"></i><b>7.4</b> Expanding and converting volume and biomass models</a></li>
+<li class="chapter" data-level="7.5" data-path="7-util.html"><a href="7-util.html#arbi"><i class="fa fa-check"></i><b>7.5</b> Arbitrating between different models</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="7-util.html"><a href="7-util.html#comparing-using-validation-criteria"><i class="fa fa-check"></i><b>7.5.1</b> Comparing using validation criteria</a></li>
+<li class="chapter" data-level="7.5.2" data-path="7-util.html"><a href="7-util.html#choosing-a-model"><i class="fa fa-check"></i><b>7.5.2</b> Choosing a model</a></li>
+<li class="chapter" data-level="7.5.3" data-path="7-util.html"><a href="7-util.html#bayesian-model-averaging"><i class="fa fa-check"></i><b>7.5.3</b> Bayesian model averaging</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="conclusions-and-recommendations.html"><a href="conclusions-and-recommendations.html"><i class="fa fa-check"></i>Conclusions and recommendations</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="" data-path="list-of-red-lines.html"><a href="list-of-red-lines.html"><i class="fa fa-check"></i>List of red lines</a></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>Glossary</a></li>
+<li class="chapter" data-level="" data-path="lexicon-of-mathematical-symbols.html"><a href="lexicon-of-mathematical-symbols.html"><i class="fa fa-check"></i>Lexicon of mathematical symbols</a><ul>
+<li class="chapter" data-level="" data-path="lexicon-of-mathematical-symbols.html"><a href="lexicon-of-mathematical-symbols.html#latin-symbols"><i class="fa fa-check"></i>Latin symbols</a></li>
+<li class="chapter" data-level="" data-path="lexicon-of-mathematical-symbols.html"><a href="lexicon-of-mathematical-symbols.html#greek-symbols"><i class="fa fa-check"></i>Greek symbols</a></li>
+<li class="chapter" data-level="" data-path="lexicon-of-mathematical-symbols.html"><a href="lexicon-of-mathematical-symbols.html#non-alphabetical-symbols"><i class="fa fa-check"></i>Non-alphabetical symbols</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
+<li class="divider"></li>
+<li><a href="http://www.globallometree.org/" target="blank"><b>More on GlobAllomeTree</b></a></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank"><i>Published with bookdown</i></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Manual for building tree volume and biomass allometric equations</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="explo" class="section level1">
+<h1><span class="header-section-number">5</span> Graphical exploration of the data</h1>
+<div class="watermark">
+DRAFT
+</div>
+<p>A graphic exploration of the data is the first step in their analysis. It consists in visually assessing relations between variables in order to gain an idea of the type of model to be fitted. In practice, points are plotted on a graph as a cluster, the coordinates of which correspond to two variables: effect variable on the <span class="math inline">\(x\)</span> axis and response variable on the <span class="math inline">\(y\)</span> axis. A graph can be plotted only for at most two variables simultaneously (three-dimensional graphs cannot in practice be assessed visually). To explore graphically the relations between <span class="math inline">\(p\)</span> variables (where <span class="math inline">\(p&gt;1\)</span>), a total of <span class="math inline">\(p(p-1)/2\)</span> graphs should be plotted of one variable against the other and/or efforts should be made to construct combined effect variables from several effect variables (we will return to this point in § <a href="5-explo.html#plus">5.1.1</a>).</p>
+<p>Let us now suppose that we have one response variable <span class="math inline">\(Y\)</span> (volume, biomass<span class="math inline">\(\ldots\)</span>) and <span class="math inline">\(p\)</span> effect variables <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, <span class="math inline">\(\ldots\)</span>, <span class="math inline">\(X_p\)</span> (dbh, height<span class="math inline">\(\ldots\)</span>). The aim of the graphical exploration is not to select from among the <span class="math inline">\(p\)</span> effect variables those that will in fact be used for the model: when we select variables we need to be able to test the significant nature of a variable, which only comes later in the next phase of model fitting. The <span class="math inline">\(p\)</span> effect variables are therefore considered as fixed, and we look to determine the form of model that best links variable <span class="math inline">\(Y\)</span> to variables <span class="math inline">\(X_1\)</span> to <span class="math inline">\(X_p\)</span>. A model is made up of two terms: the mean and the error (or residual). The graphical exploration aims to specify both the form of the mean relation and the form of the error, without any concern for the value of model parameters (dealt with in the next model-fitting step). The mean relation may be linear or non linear, linearizable or not; the residual error may be additive or multiplicative, of constant variance (homoscedasticity) or not (heteroscedasticity). By way of an illustration, Figure <a href="5-explo.html#fig:exgr">5.1</a> shows four examples where the relation is linear or not, and the variance of the residuals is constant or not.</p>
+<div class="figure" style="text-align: center"><span id="fig:exgr"></span>
+<img src="source/figures/explogr.png" alt="Example of relations between two variables \(X\) and \(Y\): linear relation and constant variance of the residuals, (B) non linear relation and constant variance of the residuals, (C) linear relation and non constant variance of the residuals, (D) non linear relation and non constant variance of the residuals." width="80%" />
+<p class="caption">
+Figure 5.1: Example of relations between two variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>: linear relation and constant variance of the residuals, (B) non linear relation and constant variance of the residuals, (C) linear relation and non constant variance of the residuals, (D) non linear relation and non constant variance of the residuals.
+</p>
+</div>
+<p>The graphical exploration of the data phase is also necessary to avoid falling into the traps of “blind” fitting: the impression can be gained that the model accurately fits the data, whereas in fact this result is an artifact. This is illustrated in Figure <a href="5-explo.html#fig:badR2">5.2</a> for a linear relation. In all four cases shown in this figure the <span class="math inline">\(R^2\)</span> of the linear regression of <span class="math inline">\(Y\)</span> against <span class="math inline">\(X\)</span> is high, while in actual fact the linear relation <span class="math inline">\(Y=a+bX+\varepsilon\)</span> does not fit the data. In Figure <a href="5-explo.html#fig:badR2">5.2</a>A, the cluster of points is split into three subsets, each of which shows a linear relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X\)</span> with a negative correlation coefficient. But the three subsets are located along a line that has a positive slope, i.e. that reflecting the linear regression. In <a href="5-explo.html#fig:badR2">5.2</a>B, the cluster of points, except one outlier (very likely an aberrant value), does not show any relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X\)</span>. But the outlier is sufficient to make it look as though there is a positive relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X\)</span>. In <a href="5-explo.html#fig:badR2">5.2</a>C, the relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X\)</span> is parabolic. Finally, in <a href="5-explo.html#fig:badR2">5.2</a>D, the cluster of points, except one outlier, is located along a line with a positive slope. In this case, a linear relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X\)</span> is well suited to describing the data, once the outlier has been removed. This outlier artificially reduces the value of <span class="math inline">\(R^2\)</span> (contrary to the situation in Figure <a href="5-explo.html#fig:badR2">5.2</a>B where the outlier artificially increases <span class="math inline">\(R^2\)</span>).</p>
+<div class="figure" style="text-align: center"><span id="fig:badR2"></span>
+<img src="source/figures/badR2.png" alt="Determination coefficients (\(R^2\)) of linear regressions for clusters of points not showing a linear relation." width="80%" />
+<p class="caption">
+Figure 5.2: Determination coefficients (<span class="math inline">\(R^2\)</span>) of linear regressions for clusters of points not showing a linear relation.
+</p>
+</div>
+<p>As indicated by its name, this graphical exploration phase is more an exploration than a systematic method. Although some advice can be given in matters of finding the right model, the process requires both experience and intuition.</p>
+<div id="exploring-the-mean-relation" class="section level2">
+<h2><span class="header-section-number">5.1</span> Exploring the mean relation</h2>
+<p>Here in this section we will focus on the graphical method used to determine the nature of the mean relation between two variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, i.e. on how to find the form of the function <span class="math inline">\(f\)</span> (if it exists!) such that <span class="math inline">\(\mbox{E}(Y)=f(X)\)</span>. When there is only one effect variable <span class="math inline">\(X\)</span>, the graphical exploration consists in plotting the cluster of points <span class="math inline">\(Y\)</span> against <span class="math inline">\(X\)</span>.</p>
+<div class="filrouge">
+<ol start="2" class="example" style="list-style-type: decimal">
+<li></li>
+</ol>
+<div class="exercise">
+<p><span id="exr:feBvD" class="exercise"><strong>Red line 5.1  </strong></span><span style="color: red;"><strong><span class="math inline">\(\looparrowright\)</span> Exploring the biomass–dbh relation</strong></span></p>
+</div>
+<p>To visualize the form of the relation between total dry biomass and dbh, the biomass cluster of points should be plotted against dbh. As the dataset has already been read (see red line <a href="4-don.html#exr:read">4.1</a> or 1), the following command can be used to plot the cluster of points:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r Rchunk"><code class="sourceCode r"><span id="cb6-1"><a href="5-explo.html#cb6-1"></a><span class="kw">plot</span>(dat<span class="op">$</span>dbh, dat<span class="op">$</span>Btot, <span class="dt">xlab =</span> <span class="st">&quot;dbh (cm)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Biomass (t)&quot;</span>)</span></code></pre></div>
+<p>The resulting scatter plot is shown in Figure <a href="5-explo.html#fig:fBvD">5.3</a>. This cluster of points is of the same type as that in Figure <a href="5-explo.html#fig:exgr">5.1</a>D: the relation between biomass and dbh is not linear, and the variance of the biomass increases with dbh.</p>
+</div>
+<p>As the scatter plot graphical method is applicable only to one effect variable, we should attempt to achieve this when there are several effect variables. Let us first explain this point.</p>
+<div class="figure" style="text-align: center"><span id="fig:fBvD"></span>
+<img src="source/figures/fBvD.png" alt="Scatter plot of total dry biomass (tonnes) against diameter at breast height (cm) for the 42 trees measured in Ghana by Henry et al. (2010)." width="40%" />
+<p class="caption">
+Figure 5.3: Scatter plot of total dry biomass (tonnes) against diameter at breast height (cm) for the 42 trees measured in Ghana by <span class="citation">Henry et al. (<a href="bibliography.html#ref-henry10" role="doc-biblioref">2010</a>)</span>.
+</p>
+</div>
+<div id="plus" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> When there is more than one effect variable</h3>
+<p>The first step is to determine whether it is possible to form a single combined effect variable out of the several effect variables considered. For example, if we are looking to predict trunk volume from its dbh <span class="math inline">\(D\)</span> and its height <span class="math inline">\(H\)</span>, we can be sure that the new variable <span class="math inline">\(D^2H\)</span> will be an effective predictor. We have therefore taken two effect variables, <span class="math inline">\(D\)</span> and <span class="math inline">\(H\)</span> and used them to form a new (single!) effect variable, <span class="math inline">\(D^2H\)</span>. As an illustration of this, <span class="citation">Louppe, Koua, and Coulibaly (<a href="bibliography.html#ref-louppe94" role="doc-biblioref">1994</a>)</span> created the following individual volume model for <em>Afzelia africana</em> in the Badénou forest reserve in Côte d’Ivoire:
+<span class="math display">\[
+V=-0.0019+0.04846C^2H
+\]</span>
+where <span class="math inline">\(V\)</span> is total volume in m<span class="math inline">\(^3\)</span>, <span class="math inline">\(C\)</span> is circumference at 1.30 m in m and <span class="math inline">\(H\)</span> is height in m. Although this table is double-entry (girth and height), it in fact contains only one effect variable: <span class="math inline">\(C^2H\)</span>. Another example is the stand volume model established by <span class="citation">Fonweban and Houllier (<a href="bibliography.html#ref-fonweban97" role="doc-biblioref">1997</a>)</span> in Cameroon for <em>Eucalyptus saligna</em>:
+<span class="math display">\[
+V=\beta_1G^{\beta_2}\left(\frac{H_0}{N}\right)^{\beta_3}
+\]</span>
+where <span class="math inline">\(V\)</span> is stand volume in m<sup>3</sup> ha<sup>-1</sup>, <span class="math inline">\(G\)</span> is basal area in m<sup>2</sup> ha<sup>-1</sup>, <span class="math inline">\(H_0\)</span> is the height of the dominant tree in the stand, <span class="math inline">\(N\)</span> is stand density (number of stems per hectare) and <span class="math inline">\(\beta\)</span> are constants. Although this table is triple-entry (basal area, dominant height and density), it in fact contains only two effect variables: <span class="math inline">\(G\)</span> and the ratio <span class="math inline">\(H_0/N\)</span>.</p>
+<div class="filrouge">
+<ol start="3" class="example" style="list-style-type: decimal">
+<li></li>
+</ol>
+<div class="exercise">
+<p><span id="exr:feBvD2H" class="exercise"><strong>Red line 5.2  </strong></span><span style="color: red;"><strong><span class="math inline">\(\looparrowright\)</span> Exploring the biomass–<span class="math inline">\(D^2H\)</span> relation</strong></span></p>
+</div>
+<p>Compared with a double-entry biomass model using dbh <span class="math inline">\(D\)</span> and height <span class="math inline">\(H\)</span>, the <span class="math inline">\(D^2H\)</span> data item constitutes an approximation of trunk volume (to within the form factor) and can therefore be used as a combined effect variable. The scatter plot of biomass points against <span class="math inline">\(D^2H\)</span> is obtained by the command:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r Rchunk"><code class="sourceCode r"><span id="cb7-1"><a href="5-explo.html#cb7-1"></a><span class="kw">with</span>(dat, <span class="kw">plot</span>(</span>
+<span id="cb7-2"><a href="5-explo.html#cb7-2"></a>  <span class="dt">x =</span> dbh<span class="op">^</span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>heig, <span class="dt">y =</span> Btot, <span class="dt">xlab =</span> <span class="st">&quot;D2H (cm2.m)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Biomass (t)&quot;</span></span>
+<span id="cb7-3"><a href="5-explo.html#cb7-3"></a>  ))</span></code></pre></div>
+<p>and the result is shown in Figure <a href="5-explo.html#fig:fBvD2H">5.4</a>. This cluster of points is of the same type as that in Figure <a href="5-explo.html#fig:exgr">5.1</a>C: the relation between biomass and <span class="math inline">\(D^2H\)</span> is linear, but the variance of the biomass increases with <span class="math inline">\(D^2H\)</span>.</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:fBvD2H"></span>
+<img src="source/figures/fBvD2H.png" alt="Scatter plot of total dry biomass (tonnes) against \(D^2H\), where \(D\) is diameter at breast height (cm) and \(H\) height (m) for the 42 trees measured in Ghana by Henry et al. (2010)." width="40%" />
+<p class="caption">
+Figure 5.4: Scatter plot of total dry biomass (tonnes) against <span class="math inline">\(D^2H\)</span>, where <span class="math inline">\(D\)</span> is diameter at breast height (cm) and <span class="math inline">\(H\)</span> height (m) for the 42 trees measured in Ghana by <span class="citation">Henry et al. (<a href="bibliography.html#ref-henry10" role="doc-biblioref">2010</a>)</span>.
+</p>
+</div>
+<p>Assume that, once the effect variables have been aggregated, we are still left with <span class="math inline">\(p\)</span> effect variables <span class="math inline">\(X_1\)</span>, <span class="math inline">\(\ldots\)</span>, <span class="math inline">\(X_p\)</span> (with <span class="math inline">\(p&gt;1\)</span>). We could first explore the <span class="math inline">\(p\)</span> relations between <span class="math inline">\(Y\)</span> and each of the <span class="math inline">\(p\)</span> effect variables. As these take the form of relations between two variables, the graphical methods presented hereafter are perfectly suitable. However, this approach often yields little information as the relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(p\)</span> variables does not boil down to the <span class="math inline">\(p\)</span> relations between <span class="math inline">\(Y\)</span> and each of the <span class="math inline">\(p\)</span> variables separately. A simple example can clearly illustrate this: let us suppose that variable <span class="math inline">\(Y\)</span> is (to within the errors) the sum of two effect variables:
+<span class="math display" id="eq:truem">\[\begin{equation}
+Y=X_1+X_2+\varepsilon\tag{5.1}
+\end{equation}\]</span>
+where <span class="math inline">\(\varepsilon\)</span> is a zero expectation error, and variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> are related such that <span class="math inline">\(X_1\)</span> varies between 0 and <span class="math inline">\(-X_{\max}\)</span> and, for a given <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span> varies between <span class="math inline">\(\max(0,-X1)\)</span> and <span class="math inline">\(\min(X_{\max},1-X_1)\)</span>. Figure <a href="5-explo.html#fig:badex">5.5</a> shows the two plots of <span class="math inline">\(Y\)</span> against each of the effect variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> using simulated data for this model (with <span class="math inline">\(X_{\max}=5\)</span>). The cluster of points does not appear to have any particular structure, and no model is therefore detected that generates <span class="math inline">\(\mbox{E}(Y)=X_1+X_2\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:badex"></span>
+<img src="source/figures/badexplo.png" alt="Plots of variable \(Y\) against each of the effect variables \(X_1\) and \(X_2\) such that \(\mbox{E}(Y)=X_1+X_2\)." width="80%" />
+<p class="caption">
+Figure 5.5: Plots of variable <span class="math inline">\(Y\)</span> against each of the effect variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> such that <span class="math inline">\(\mbox{E}(Y)=X_1+X_2\)</span>.
+</p>
+</div>
+<p>When we have two effect variables, one way to solve the problem is by conditioning. This consists in looking at the relation between the response variable <span class="math inline">\(Y\)</span> and one of the effect variables (let us say <span class="math inline">\(X_2\)</span>) conditionally on the values of the other effect variable (in this case <span class="math inline">\(X_1\)</span>). In practice, we divide the dataset into classes based on the value of <span class="math inline">\(X_1\)</span>, then we explore the relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_2\)</span> in each data subset. If we consider again the previous example, we divide the values of <span class="math inline">\(X_1\)</span> into 12 large intervals of 0.5 units: the first ranging from <span class="math inline">\(-5\)</span> to <span class="math inline">\(-4.5\)</span>, the second from <span class="math inline">\(-4.5\)</span> to <span class="math inline">\(-4\)</span>, etc., up to the last interval that ranges from 0.5 to 1. The dataset shown in Figure <a href="5-explo.html#fig:badex">5.5</a> has therefore been divided into 12 data subsets based on the 12 classes of <span class="math inline">\(X_1\)</span> values, and 12 plots can be constructed of <span class="math inline">\(Y\)</span> against <span class="math inline">\(X_2\)</span> for each of these 12 data subsets. The result is shown in Figure <a href="5-explo.html#fig:cX1">5.6</a>. If we superimpose all the plots in Figure <a href="5-explo.html#fig:cX1">5.6</a> this will give the plot shown on the right in Figure <a href="5-explo.html#fig:badex">5.5</a>. These plots show that, for any given value of <span class="math inline">\(X_1\)</span>, relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_2\)</span> is indeed linear. Additionally, we can see that the slope of the line of <span class="math inline">\(Y\)</span> plotted against <span class="math inline">\(X_2\)</span> for any given <span class="math inline">\(X_1\)</span> has the same constant value for all values of <span class="math inline">\(X_1\)</span>. This graphical exploration therefore shows that the model takes the form:
+<span class="math display">\[
+\mbox{E}(Y)=f(X_1)+aX_2
+\]</span>
+where <span class="math inline">\(a\)</span> is a constant coefficient (in this case it has a value of 1, but the graphical exploration is not concerned with parameter values), and <span class="math inline">\(f(X_1)\)</span> is the y-intercept of the line generated by plotting <span class="math inline">\(Y\)</span> against <span class="math inline">\(X_2\)</span> for a given value of <span class="math inline">\(X_1\)</span>. This y-intercept potentially varies with <span class="math inline">\(X_1\)</span>, in accordance with function <span class="math inline">\(f\)</span> that remains to be determined.</p>
+<div class="figure" style="text-align: center"><span id="fig:cX1"></span>
+<img src="source/figures/conditioX1.png" alt="Plots of a response variable against an effect variable \(X_2\) for each of the data subsets defined by the value classes of another effect variable \(X_1\), with \(\mbox{E}(Y)=X_1+X_2\)." width="80%" />
+<p class="caption">
+Figure 5.6: Plots of a response variable against an effect variable <span class="math inline">\(X_2\)</span> for each of the data subsets defined by the value classes of another effect variable <span class="math inline">\(X_1\)</span>, with <span class="math inline">\(\mbox{E}(Y)=X_1+X_2\)</span>.
+</p>
+</div>
+<p>In order to explore the form of function <span class="math inline">\(f\)</span>, we can plot a linear regression for each of the 12 data subsets of <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_2\)</span> corresponding to the 12 classes of <span class="math inline">\(X_1\)</span> values. The y-intercept of each of these 12 lines is then recorded, called <span class="math inline">\(y_0\)</span>, and a graph is plotted of <span class="math inline">\(y_0\)</span> against the middle of each class of <span class="math inline">\(X_1\)</span> values. This plot is shown in Figure <a href="5-explo.html#fig:y0X1">5.7</a> for the same simulated data as previously. This graphical exploration shows that the relation between <span class="math inline">\(y_0\)</span> and <span class="math inline">\(X_1\)</span> is linear, i.e.: <span class="math inline">\(f(X_1)=bX_1+c\)</span>. Altogether, the graphical exploration based on the conditioning relative to <span class="math inline">\(X_1\)</span> showed that an adequate model is:
+<span class="math display">\[
+\mbox{E}(Y)=aX_2+bX_1+c
+\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:y0X1"></span>
+<img src="source/figures/ordonX1.png" alt="Plot of the y-intercepts of linear regressions between \(Y\) and \(X_2\) for data subsets corresponding to classes of \(X_1\) values against the middle of these classes, for data simulated in accordance with the model \(Y=X_1+X_2+\varepsilon\)." width="40%" />
+<p class="caption">
+Figure 5.7: Plot of the y-intercepts of linear regressions between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_2\)</span> for data subsets corresponding to classes of <span class="math inline">\(X_1\)</span> values against the middle of these classes, for data simulated in accordance with the model <span class="math inline">\(Y=X_1+X_2+\varepsilon\)</span>.
+</p>
+</div>
+<p>Given that the variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> play symmetrical roles in the model <a href="5-explo.html#eq:truem">(5.1)</a>, the conditioning is also symmetrical with regard to these two variables. Here we have studied the relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_2\)</span> conditionally on <span class="math inline">\(X_1\)</span>, but would have arrived, in the same manner, at the same model had we explored the relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_1\)</span> conditionally on <span class="math inline">\(X_2\)</span>.</p>
+<p>In this example, the relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_2\)</span> for a given <span class="math inline">\(X_1\)</span> is a line whose slope is independent of <span class="math inline">\(X_2\)</span>: it may be said that there is no interaction between <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>. A model with an interaction would, for example, correspond to: <span class="math inline">\(\mbox{E}(Y)=X_1+X_2+X_1X_2\)</span>. In this case, the relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_2\)</span> at a given <span class="math inline">\(X_1\)</span> is a line whose slope, which is <span class="math inline">\(1+X_1\)</span>, is indeed dependent on <span class="math inline">\(X_1\)</span>. The conditioning used means that we can without additional difficulty explore the form of models that include interactions between effect variables.</p>
+<p>This conditioning can, in principle, be extended to any number of effect variables.For three effect variables <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, <span class="math inline">\(X_3\)</span> for example, we could explore the relation between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X_3\)</span> with <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> fixed and note <span class="math inline">\(f\)</span> the function defining this relation and <span class="math inline">\(\theta(X_1,\ X_2)\)</span> the parameters of <span class="math inline">\(f\)</span> (that potentially depend on <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>):
+<span class="math display">\[
+\mbox{E}(Y)=f[X_3;\ \theta(X_1,\ X_2)]
+\]</span>
+We would then explore the relation between <span class="math inline">\(\theta\)</span> and the two variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>. Again, we would condition by exploring the relation between <span class="math inline">\(\theta\)</span> and <span class="math inline">\(X_2\)</span> with <span class="math inline">\(X_1\)</span> fixed; and note <span class="math inline">\(g\)</span> the function defining this relation and <span class="math inline">\(\phi(X_1)\)</span> the parameters of <span class="math inline">\(g\)</span> (that potentially depend on <span class="math inline">\(X_1\)</span>):
+<span class="math display">\[
+\theta(X_1,\ X_2)=g[X_2;\ \phi(X_1)]
+\]</span>
+Finally, we would explore the relation between <span class="math inline">\(\phi\)</span> and <span class="math inline">\(X_1\)</span>; i.e. <span class="math inline">\(h\)</span> the function defining this relation. Ultimately, the model describing the data corresponds to:
+<span class="math display">\[
+\mbox{E}(Y)=f\{X_3;\ g[X_2;\ h(X_1)]\}
+\]</span>
+This reasoning may, in principle, be extended to any number of effect variables, but it is obvious, in practice, that it becomes difficult to implement for <span class="math inline">\(p&gt;3\)</span>. This conditioning requires a great deal of data as each data subset, established by the value classes of the conditional variables, must include sufficient data to allow a valid graphical exploration of the relations between variables. When using three effect variables, the data subsets are established by crossing classes of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> values (for example). If the full dataset includes <span class="math inline">\(n\)</span> observations, if <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> are divided into 10 value classes, and if the data are evenly distributed between these classes, then each data subset will contain only <span class="math inline">\(n/100\)</span> observations! Therefore, in practice, and unless the dataset is particularly huge, it is difficult to use the conditioning method for more than two effect variables.</p>
+<p>The number of entries employed when fitting biomass or volume tables is in most cases limited to at most two or three, meaning that we generally are not faced with the problem of conducting the graphical exploration with a large number of effect variables. Otherwise, multivariate analyses such as the principal components analysis may be usefully employed <span class="citation">(Philippeau <a href="bibliography.html#ref-philippeau86" role="doc-biblioref">1986</a>; Härdle and Simar <a href="bibliography.html#ref-hardle03" role="doc-biblioref">2003</a>)</span>. These analyses aim to project the observations made onto a reduced subspace (usually in two or three dimensions), constructed from linear combinations of effect variables and in such a manner to maximize the variability of the observations in this subspace. In other words, these multivariate analyses can be used to visualize relations between variables while losing as little information as possible, which is precisely the aim of graphical exploration.</p>
+<div class="filrouge">
+<ol start="4" class="example" style="list-style-type: decimal">
+<li></li>
+</ol>
+<div class="exercise">
+<p><span id="exr:frho" class="exercise"><strong>Red line 5.3  </strong></span><span style="color: red;"><strong><span class="math inline">\(\looparrowright\)</span> Conditioning on wood density</strong></span></p>
+</div>
+<p>Let us now explore the relation between biomass, <span class="math inline">\(D^2H\)</span> and wood density <span class="math inline">\(\rho\)</span>. Let us define <code>n</code> classes of wood density such that each class contains approximately the same number of observations:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r Rchunk"><code class="sourceCode r"><span id="cb8-1"><a href="5-explo.html#cb8-1"></a>n &lt;-<span class="st"> </span><span class="dv">4</span></span>
+<span id="cb8-2"><a href="5-explo.html#cb8-2"></a>d &lt;-<span class="st"> </span><span class="kw">quantile</span>(dat<span class="op">$</span>dens, (<span class="dv">0</span><span class="op">:</span>n) <span class="op">/</span><span class="st"> </span>n)</span>
+<span id="cb8-3"><a href="5-explo.html#cb8-3"></a>i &lt;-<span class="st"> </span><span class="kw">findInterval</span>(dat<span class="op">$</span>dens, d, <span class="dt">rightmost.closed =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p>The object <code>d</code> defines the limits of the density classes while object <code>i</code> contains the number of the density class to which each observation belongs. The plot of biomass against <span class="math inline">\(D^2H\)</span> on a log scale, with different symbols and colors for the different density classes, may be obtained by the command:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r Rchunk"><code class="sourceCode r"><span id="cb9-1"><a href="5-explo.html#cb9-1"></a><span class="kw">with</span>(dat,<span class="kw">plot</span>(</span>
+<span id="cb9-2"><a href="5-explo.html#cb9-2"></a>  dbh<span class="op">^</span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>heig, Btot, <span class="dt">xlab =</span> <span class="st">&quot;D2H (cm2m)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Biomass (t)&quot;</span>, <span class="dt">log =</span> <span class="st">&quot;xy&quot;</span>, </span>
+<span id="cb9-3"><a href="5-explo.html#cb9-3"></a>  <span class="dt">pch =</span> i, <span class="dt">col =</span> i</span>
+<span id="cb9-4"><a href="5-explo.html#cb9-4"></a>  ))</span></code></pre></div>
+<p>and is shown in Figure <a href="5-explo.html#fig:fcond">5.8</a> for <code>n=4</code> wood density classes. Pre-empting chapter <a href="6-fit.html#fit">6</a>, we will now plot the linear regression between <span class="math inline">\(\ln(B)\)</span> and <span class="math inline">\(\ln(D^2H)\)</span> for each subset of observations corresponding to each wood density class:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r Rchunk"><code class="sourceCode r"><span id="cb10-1"><a href="5-explo.html#cb10-1"></a>m &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">lapply</span>(<span class="kw">split</span>(dat, i), <span class="cf">function</span>(x) </span>
+<span id="cb10-2"><a href="5-explo.html#cb10-2"></a>  <span class="kw">coef</span>(<span class="kw">lm</span>(<span class="kw">log</span>(Btot) <span class="op">~</span><span class="st"> </span><span class="kw">I</span>(<span class="kw">log</span>(dbh<span class="op">^</span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>heig)), <span class="dt">data =</span> x[x<span class="op">$</span>Btot <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>,]))))</span></code></pre></div>
+<p>When we plot the y-intercepts of the regression and its slopes against median wood density for the class:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r Rchunk"><code class="sourceCode r"><span id="cb11-1"><a href="5-explo.html#cb11-1"></a>dmid &lt;-<span class="st"> </span>(d[<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span><span class="st"> </span>d[<span class="op">-</span>n]) <span class="op">/</span><span class="st"> </span><span class="dv">2</span></span>
+<span id="cb11-2"><a href="5-explo.html#cb11-2"></a><span class="kw">plot</span>(dmid, m[<span class="dv">1</span>,], <span class="dt">xlab =</span> <span class="st">&quot;Wood density (g/cm3)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;y-Intercept&quot;</span>)</span>
+<span id="cb11-3"><a href="5-explo.html#cb11-3"></a><span class="kw">plot</span>(dmid, m[<span class="dv">2</span>,], <span class="dt">xlab =</span> <span class="st">&quot;Wood density (g/cm3)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Slope&quot;</span>)</span></code></pre></div>
+<p>this at first sight does not appear to yield any particular relation (Figure <a href="5-explo.html#fig:flmcond">5.9</a>).</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:fcond"></span>
+<img src="source/figures/fcondi.png" alt="Scatter plot (log-transformed data) of total dry biomass (tonnes) against \(D^2H\), where \(D\) is diameter at breast height (cm) and \(H\) is height (m) for the 42 trees measured in Ghana by Henry et al. (2010) with different symbols for the different wood density classes: black circles, \(0.170\leq\rho&lt;0.545\) g cm-3; red triangles, \(0.545\leq\rho&lt;0.600\) g cm-3; green plus signs, \(0.600\leq\rho&lt;0.650\) g cm-3; blue crosses, \(0.650\leq\rho&lt;0780\) g cm-3." width="40%" />
+<p class="caption">
+Figure 5.8: Scatter plot (log-transformed data) of total dry biomass (tonnes) against <span class="math inline">\(D^2H\)</span>, where <span class="math inline">\(D\)</span> is diameter at breast height (cm) and <span class="math inline">\(H\)</span> is height (m) for the 42 trees measured in Ghana by <span class="citation">Henry et al. (<a href="bibliography.html#ref-henry10" role="doc-biblioref">2010</a>)</span> with different symbols for the different wood density classes: black circles, <span class="math inline">\(0.170\leq\rho&lt;0.545\)</span> g cm<sup>-3</sup>; red triangles, <span class="math inline">\(0.545\leq\rho&lt;0.600\)</span> g cm<sup>-3</sup>; green plus signs, <span class="math inline">\(0.600\leq\rho&lt;0.650\)</span> g cm<sup>-3</sup>; blue crosses, <span class="math inline">\(0.650\leq\rho&lt;0780\)</span> g cm<sup>-3</sup>.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:flmcond"></span>
+<img src="source/figures/flmcond.png" alt="Y-intercept \(a\) and slope \(b\) of the linear regression \(\ln(B)=a+b\ln(D^2H)\) conditioned on wood density class, against the median wood density of the classes. The regressions were plotted using the data from the 42 trees measured by Henry et al. (2010) au Ghana." width="80%" />
+<p class="caption">
+Figure 5.9: Y-intercept <span class="math inline">\(a\)</span> and slope <span class="math inline">\(b\)</span> of the linear regression <span class="math inline">\(\ln(B)=a+b\ln(D^2H)\)</span> conditioned on wood density class, against the median wood density of the classes. The regressions were plotted using the data from the 42 trees measured by <span class="citation">Henry et al. (<a href="bibliography.html#ref-henry10" role="doc-biblioref">2010</a>)</span> au Ghana.
+</p>
+</div>
+</div>
+<div id="determining-whether-or-not-a-relation-is-adequate" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Determining whether or not a relation is adequate</h3>
+<p>Henceforth, we will assume that we have a single effect variable <span class="math inline">\(X\)</span> and that we are looking to explore the relation between <span class="math inline">\(X\)</span> and the response variable <span class="math inline">\(Y\)</span>. The first step is to plot all the cluster of points on a graph, with <span class="math inline">\(X\)</span> on the x-axis and <span class="math inline">\(Y\)</span> on the y-axis. We then need to guess visually the function that passes through the middle of this cluster of points while following its shape. In fact, the human eye is not very good at discriminating between similar shapes. For example, Figure <a href="5-explo.html#fig:wii1">5.10</a> shows three scatter plots corresponding to the three following models, but not in the right order (the error term here has been set at zero):
+<span class="math display">\[
+\begin{array}{lcl}
+\mbox{power model:} &amp;&amp; Y=aX^b
+\\\mbox{exponential model:} &amp;&amp; Y=a\exp(bX)
+\\\mbox{polynomial model:} &amp;&amp; Y=a+bX+cX^2+dX^3
+\end{array}
+\]</span>
+The three scatter plots look fairly similar, and it would be no mean feat to sort out which one corresponds to which model.</p>
+<div class="figure" style="text-align: center"><span id="fig:wii1"></span>
+<img src="source/figures/whoisit1.png" alt="Three scatter points corresponding to three models: power model, exponential model and polynomial model, but not in the right order." width="80%" />
+<p class="caption">
+Figure 5.10: Three scatter points corresponding to three models: power model, exponential model and polynomial model, but not in the right order.
+</p>
+</div>
+<p>By contrast, the human eye is very good at detecting whether a relation is linear or not. To detect visually whether or not the shape of a cluster of points fits a function, it is therefore greatly in our interests when possible to use a variables transformation that renders the relation linear. For instance, in the case of the power model, <span class="math inline">\(Y=aX^b\)</span> yields <span class="math inline">\(\ln Y=\ln a+b\ln X\)</span>, and this variables transformation:
+<span class="math display" id="eq:lXlY">\[\begin{equation}
+\left\{
+\begin{array}{l}
+X&#39;=\ln X\\ Y&#39;=\ln Y
+\end{array}
+\right.\tag{5.2}
+\end{equation}\]</span>
+renders the relation linear. In the case of the exponential model, <span class="math inline">\(Y=a\exp(bX)\)</span> yields <span class="math inline">\(\ln Y=\ln a+bX\)</span>, and this variables transformation:
+<span class="math display" id="eq:XlY">\[\begin{equation}
+\left\{
+\begin{array}{l}
+X&#39;=X\\ Y&#39;=\ln Y
+\end{array}
+\right.\tag{5.3}
+\end{equation}\]</span>
+renders the relation linear. By contrast, neither of these two transformation is able to render the polynomial relation linear. If we apply these transformations to the data presented in Figure <a href="5-explo.html#fig:wii1">5.10</a>, we should be able to detect which of the scatter plots corresponds to which model. Figure <a href="5-explo.html#fig:wii2">5.11</a> shows the three scatter plots after transforming the variables as in <a href="5-explo.html#eq:XlY">(5.3)</a>. The first scatter plot takes the form of a straight line while the two others are still curves. The scatter plot on the left of Figure <a href="5-explo.html#fig:wii1">5.10</a> therefore corresponds to the exponential model.</p>
+<div class="figure" style="text-align: center"><span id="fig:wii2"></span>
+<img src="source/figures/whoisit2.png" alt="Application of the variables transformation \(X\rightarrow X\), \(Y\rightarrow\ln Y\) to the scatter plots given in 5.10." width="80%" />
+<p class="caption">
+Figure 5.11: Application of the variables transformation <span class="math inline">\(X\rightarrow X\)</span>, <span class="math inline">\(Y\rightarrow\ln Y\)</span> to the scatter plots given in <a href="5-explo.html#fig:wii1">5.10</a>.
+</p>
+</div>
+<p>Figure <a href="5-explo.html#fig:wii3">5.12</a> shows the three scatter plots after transforming the variables as in <a href="5-explo.html#eq:lXlY">(5.2)</a>.The second scatter plot takes the form of a straight line while the two others are still curves. The scatter plot in the center of Figure <a href="5-explo.html#fig:wii1">5.10</a> therefore corresponds to the power model. By deduction, the scatter plot on the right of Figure <a href="5-explo.html#fig:wii1">5.10</a> corresponds to the polynomial model.</p>
+<div class="figure" style="text-align: center"><span id="fig:wii3"></span>
+<img src="source/figures/whoisit3.png" alt="Application of the variables transformation \(X\rightarrow\ln X\), \(Y\rightarrow\ln Y\) to the scatter plots shown in 5.10." width="80%" />
+<p class="caption">
+Figure 5.12: Application of the variables transformation <span class="math inline">\(X\rightarrow\ln X\)</span>, <span class="math inline">\(Y\rightarrow\ln Y\)</span> to the scatter plots shown in <a href="5-explo.html#fig:wii1">5.10</a>.
+</p>
+</div>
+<p>It is not always possible to find a variable transformation that renders the relation linear. This, for instance, is precisely the case of the polynomial model <span class="math inline">\(Y=a+bX+cX^2+dX^3\)</span>: no transformation of <span class="math inline">\(X\)</span> into <span class="math inline">\(X&#39;\)</span> and of <span class="math inline">\(Y\)</span> into <span class="math inline">\(Y&#39;\)</span> was found such that the relation between <span class="math inline">\(Y&#39;\)</span> and <span class="math inline">\(X&#39;\)</span> is a straight line, whatever the coefficients <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span> et <span class="math inline">\(d\)</span>. It must also be clearly understood that the linearity we are talking about here is that of the relation between the response variable <span class="math inline">\(Y\)</span> and the effect variable <span class="math inline">\(X\)</span>. It is not linearity in the sense of the linear model, which describes linearity with regards to model coefficients (thus, the model <span class="math inline">\(Y=a+bX^2\)</span> is linear in the sense of the linear model whereas it describes a non-linear relation between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>).</p>
+<p>When no transformation of the variable is able to render the relation between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> linear, the best approach is to fit the model and determine visually whether the fitted model passes through the middle of the cluster of points and follows its shape. Also, in this case, we have much to gain by examining the plot of the residuals against the fitted values.</p>
+<div class="filrouge">
+<ol start="5" class="example" style="list-style-type: decimal">
+<li></li>
+</ol>
+<div class="exercise">
+<p><span id="exr:feln" class="exercise"><strong>Red line 5.4  </strong></span><span style="color: red;"><strong><span class="math inline">\(\looparrowright\)</span> Exploring the biomass–dbh relation: variables transformation</strong></span></p>
+</div>
+<p>Let us use the log transformation to transform simultaneously both dbh and biomass. The scatter plot of the log-transformed data is obtained as follows:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r Rchunk"><code class="sourceCode r"><span id="cb12-1"><a href="5-explo.html#cb12-1"></a><span class="kw">plot</span>(</span>
+<span id="cb12-2"><a href="5-explo.html#cb12-2"></a>  <span class="dt">x =</span> dat<span class="op">$</span>dbh, <span class="dt">y =</span> dat<span class="op">$</span>Btot, <span class="dt">xlab =</span> <span class="st">&quot;Diameter (cm)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Biomass (t)&quot;</span>, </span>
+<span id="cb12-3"><a href="5-explo.html#cb12-3"></a>  <span class="dt">log =</span> <span class="st">&quot;xy&quot;</span></span>
+<span id="cb12-4"><a href="5-explo.html#cb12-4"></a>  )</span></code></pre></div>
+<p>The resulting scatter plot is shown in Figure <a href="5-explo.html#fig:flnBvlnD">5.13</a>. The log transformation has rendered linear the relation between biomass and dbh: the relation between <span class="math inline">\(\ln(D)\)</span> and <span class="math inline">\(\ln(B)\)</span> is a straight line and the variance of <span class="math inline">\(\ln(B)\)</span> does not vary with diameter (like in Figure <a href="5-explo.html#fig:exgr">5.1</a>A).</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:flnBvlnD"></span>
+<img src="source/figures/flnBvlnD.png" alt="Scatter plot (log-transformed data) of total dry biomass (tonnes) against diameter at breast height (cm) for the 42 trees measured in Ghana by Henry et al. (2010)." width="40%" />
+<p class="caption">
+Figure 5.13: Scatter plot (log-transformed data) of total dry biomass (tonnes) against diameter at breast height (cm) for the 42 trees measured in Ghana by <span class="citation">Henry et al. (<a href="bibliography.html#ref-henry10" role="doc-biblioref">2010</a>)</span>.
+</p>
+</div>
+<div class="filrouge">
+<ol start="6" class="example" style="list-style-type: decimal">
+<li></li>
+</ol>
+<div class="exercise">
+<p><span id="exr:feln2" class="exercise"><strong>Red line 5.5  </strong></span><span style="color: red;"><strong><span class="math inline">\(\looparrowright\)</span> Exploring the biomass–<span class="math inline">\(D^2H\)</span> relation: variables transformation</strong></span></p>
+</div>
+<p>Let us use the log transformation to transform simultaneously both <span class="math inline">\(D^2H\)</span> and biomass. The scatter plot of the log-transformed data is obtained as follows:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r Rchunk"><code class="sourceCode r"><span id="cb13-1"><a href="5-explo.html#cb13-1"></a><span class="kw">with</span>(dat, <span class="kw">plot</span>(</span>
+<span id="cb13-2"><a href="5-explo.html#cb13-2"></a>  <span class="dt">x =</span> dbh<span class="op">^</span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>heig, <span class="dt">y =</span> Btot, <span class="dt">xlab =</span> <span class="st">&quot;D2H (cm2.m)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Biomass (t)&quot;</span>,</span>
+<span id="cb13-3"><a href="5-explo.html#cb13-3"></a>  <span class="dt">log =</span> <span class="st">&quot;xy&quot;</span></span>
+<span id="cb13-4"><a href="5-explo.html#cb13-4"></a>  ))</span></code></pre></div>
+<p>The resulting scatter plot is shown in Figure <a href="5-explo.html#fig:flnBvD2H">5.14</a>. The log transformation has rendered linear the relation between biomass and <span class="math inline">\(D^2H\)</span>: the relation between <span class="math inline">\(\ln(D^2H)\)</span> and <span class="math inline">\(\ln(B)\)</span> is a straight line and the variance of <span class="math inline">\(\ln(B)\)</span> does not vary with <span class="math inline">\(D^2H\)</span> (like in Figure <a href="5-explo.html#fig:exgr">5.1</a>A).</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:flnBvD2H"></span>
+<img src="source/figures/flnBvD2H.png" alt="Scatter plot (log-transformed data) of total dry biomass (tonnes) against \(D^2H\), where \(D\) is diameter at breast height (cm) and \(H\) is height (m) for the 42 trees measured in Ghana by Henry et al. (2010)." width="40%" />
+<p class="caption">
+Figure 5.14: Scatter plot (log-transformed data) of total dry biomass (tonnes) against <span class="math inline">\(D^2H\)</span>, where <span class="math inline">\(D\)</span> is diameter at breast height (cm) and <span class="math inline">\(H\)</span> is height (m) for the 42 trees measured in Ghana by <span class="citation">Henry et al. (<a href="bibliography.html#ref-henry10" role="doc-biblioref">2010</a>)</span>.
+</p>
+</div>
+</div>
+<div id="catalog-of-primitives" class="section level3">
+<h3><span class="header-section-number">5.1.3</span> Catalog of primitives</h3>
+<p>If we consider the tables calculated by <span class="citation">Zianis et al. (<a href="bibliography.html#ref-zianis05" role="doc-biblioref">2005</a>)</span> for Europe, by <span class="citation">Henry et al. (<a href="bibliography.html#ref-henry11" role="doc-biblioref">2011</a>)</span> for sub-Saharan Africa, or more specifically by <span class="citation">Hofstad (<a href="bibliography.html#ref-hofstad05" role="doc-biblioref">2005</a>)</span> for southern Africa, this gives an idea as to the form of the models most commonly found in the literature on biomass and volume tables. This shows that two models are often used: the power model and the (second, or at most, third order) polynomial model. These two models are therefore useful starting points for the graphical exploration of data when looking to construct a volume or biomass model. The power model <span class="math inline">\(Y=aX^b\)</span> is also known as an allometric relation and the literature contains a number of biological interpretations of this model <span class="citation">(Gould <a href="bibliography.html#ref-gould79" role="doc-biblioref">1979</a>; Franc, Gourlet-Fleury, and Picard <a href="bibliography.html#ref-franc00b" role="doc-biblioref">2000</a>, sec. 1.1.5)</span>. In particular, the “metabolic scaling theory” <span class="citation">(Enquist, Brown, and West <a href="bibliography.html#ref-enquist98" role="doc-biblioref">1998</a>; Enquist et al. <a href="bibliography.html#ref-enquist99" role="doc-biblioref">1999</a>; West, Brown, and Enquist <a href="bibliography.html#ref-west97" role="doc-biblioref">1997</a>, <a href="bibliography.html#ref-west99" role="doc-biblioref">1999</a>)</span> predicts in a theoretical manner, and based on a fractal description of the internal structure of trees, that the biomass of a tree is related to its dbh by a power relation where the exponent is <span class="math inline">\(8/3\approx2.67\)</span>:
+<span class="math display">\[
+B\propto\rho D^{8/3}
+\]</span>
+where <span class="math inline">\(\rho\)</span> is specific wood density. Although metabolic scaling theory has been widely criticized
+<span class="citation">(Muller-Landau et al. <a href="bibliography.html#ref-mullerlandau06" role="doc-biblioref">2006</a>)</span>, it does at least have the merit of laying a biological basis for this often observed power relation.</p>
+<p>In addition to this power model <span class="math inline">\(B=aD^b\)</span> and the second-order polynomial model <span class="math inline">\(B=a_0+a_1D+a_2D^2\)</span>, and without pretending in any way to be exhaustive, the following biomass tables are also often found <span class="citation">(Yamakura et al. <a href="bibliography.html#ref-yamakura86" role="doc-biblioref">1986</a>; Brown, Gillespie, and Lugo <a href="bibliography.html#ref-brown89" role="doc-biblioref">1989</a>; Brown <a href="bibliography.html#ref-brown97" role="doc-biblioref">1997</a>; Martinez-Yrizar et al. <a href="bibliography.html#ref-martinez92" role="doc-biblioref">1992</a>; Araújo, Higuchi, and Carvalho <a href="bibliography.html#ref-araujo99" role="doc-biblioref">1999</a>; Nelson et al. <a href="bibliography.html#ref-nelson99" role="doc-biblioref">1999</a>; Ketterings et al. <a href="bibliography.html#ref-ketterings01" role="doc-biblioref">2001</a>; Chave, Riéra, and Dubois <a href="bibliography.html#ref-chave01b" role="doc-biblioref">2001</a>; Chave et al. <a href="bibliography.html#ref-chave05" role="doc-biblioref">2005</a>; Nogueira et al. <a href="bibliography.html#ref-nogueira08" role="doc-biblioref">2008</a>; Basuki et al. <a href="bibliography.html#ref-basuki09" role="doc-biblioref">2009</a>; Návar <a href="bibliography.html#ref-navar09" role="doc-biblioref">2009</a>; Djomo et al. <a href="bibliography.html#ref-djomo10" role="doc-biblioref">2010</a>; Henry et al. <a href="bibliography.html#ref-henry10" role="doc-biblioref">2010</a>)</span>:</p>
+<ol style="list-style-type: decimal">
+<li><p>double-entry model of the power form in relation to the variable <span class="math inline">\(D^2H\)</span>: <span class="math inline">\(B=a(\rho D^2H)^b\)</span></p></li>
+<li><p>double-entry model: <span class="math inline">\(\ln(B)=a_0+a_1\ln(D)+a_2\ln(H)+a_3\ln(\rho)\)</span></p></li>
+<li><p>single-entry model: <span class="math inline">\(\ln(B)=a_0+a_1\ln(D)+a_2[\ln(D)]^2+a_3[\ln(D)]^3+a_4\ln(\rho)\)</span>,</p></li>
+</ol>
+<p>where <span class="math inline">\(\rho\)</span> is specific wood density. To within the form factor, the variable <span class="math inline">\(D^2H\)</span> corresponds to the volume of the trunk, which explains why it is so often used as effect variable. The second equation may be considered to be a generalization of the first for if we apply the log transformation, the first equation is equivalent to:
+<span class="math inline">\(\ln(B)=\ln(a)+2b\ln(D)+b\ln(H)+b\ln(\rho)\)</span>. The first equation is therefore equivalent to the second in the particular case where <span class="math inline">\(a_2=a_3=a_1/2\)</span>. Finally, the third equation may be considered to be a generalization of the power model <span class="math inline">\(B=aD^b\)</span>.</p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:prim">Table 5.1: </span>A few models linking two variables.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Name
+</th>
+<th style="text-align:left;">
+Equation
+</th>
+<th style="text-align:left;">
+Transformation
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="3">
+<td colspan="3" style="background-color: #ddd;">
+<strong>Polynomial models</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+linear
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a+bX\)</span>
+</td>
+<td style="text-align:left;">
+same
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+parabolic or quadratic
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a+bX+cX^2\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+<span class="math inline">\(p\)</span>-order polynomial
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a_0+a_1X+a_2X^2+\ldots+a_pX^p\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr grouplength="5">
+<td colspan="3" style="background-color: #ddd;">
+<strong>Exponential models</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+exponential or Malthus
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a\exp(bX)\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=\ln Y\)</span>, <span class="math inline">\(X&#39;=X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+modified exponential
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a\exp(b/X)\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=\ln Y\)</span>, <span class="math inline">\(X&#39;=1/X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+logarithm
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a+b\ln X\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=Y\)</span>, <span class="math inline">\(X&#39;=\ln X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+reciprocal log
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=1/(a+b\ln X)\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=1/Y\)</span>, <span class="math inline">\(X&#39;=\ln X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Vapor pressure
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=\exp(a+b/X+c\ln X)\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr grouplength="8">
+<td colspan="3" style="background-color: #ddd;">
+<strong>Power law models</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+power
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=\ln Y\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=\ln Y\)</span>, <span class="math inline">\(X&#39;=\ln X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+modified power
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=ab^X\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=\ln Y\)</span>, <span class="math inline">\(X&#39;=X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+shifted power
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a(X-b)^c\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+geometric
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=aX^{bX}\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=\ln Y\)</span>, <span class="math inline">\(X&#39;=X\ln X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+modified geometric
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=aX^{b/X}\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=\ln Y\)</span>, <span class="math inline">\(X&#39;=(\ln X)/X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+root
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=ab^{1/X}\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=\ln Y\)</span>, <span class="math inline">\(X&#39;=1/X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Hoerl’s model
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=ab^XX^c\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+modified Hoerl’s model
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=ab^{1/X}X^c\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="3" style="background-color: #ddd;">
+<strong>Production-density models</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+inverse
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=1/(a+bX)\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=1/Y\)</span>, <span class="math inline">\(X&#39;=X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+quadratic inverse
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=1/(a+bX+cX^2)\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Bleasdale’s model
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=(a+bX)^{-1/c}\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Harri’s model
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=1/(a+bX^c)\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="3" style="background-color: #ddd;">
+<strong>Growth models</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+saturated growth
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=aX/(b+X)\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=X/Y\)</span>, <span class="math inline">\(X&#39;=X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+mononuclear or Mitscherlich’s model
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a[b-\exp(-cX)]\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr grouplength="12">
+<td colspan="3" style="background-color: #ddd;">
+<strong>Sigmoidal models</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Gompertz
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a\exp[-b\exp(-cX)]\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Sloboda
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a\exp[-b\exp(-cX^d)]\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+logistic or Verhulst
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a/[1+b\exp(-cX)]\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Nelder
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a/[1+b\exp(-cX)]^{1/d}\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+von Bertalanffy
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a[1-b\exp(-cX)]^3\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Chapman-Richards
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a[1-b\exp(-cX)]^d\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Hossfeld
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a/[1+b(1+cX)^{-1/d}]\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Levakovic
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a/[1+b(1+cX)^{-1/d}]^{1/e}\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+multiple multiplicative factor
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=(ab+cX^d)/(b+X^d)\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Johnson-Schumacher
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a\exp[-1/(b+cX)]\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Lundqvist-MatÃ©rn or de Korf
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a\exp[-(b+cX)^d]\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Weibull
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a-b\exp(-cX^d)\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr grouplength="5">
+<td colspan="3" style="background-color: #ddd;">
+<strong>Miscellaneous models</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+hyperbolic
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a+b/X\)</span>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y&#39;=Y\)</span>, <span class="math inline">\(X&#39;=1/X\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+sinusoidal
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a+b\cos(cX+d)\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+heat capacity
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a+bX+c/X^2\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+Gaussian
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=a\exp[-(X-b)^2/(2c^2)]\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left:  2em;" indentlevel="1">
+rational fraction
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Y=(a+bX)/(1+cX+dX^2)\)</span>
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+<p>More generally, Table <a href="5-explo.html#tab:prim">5.1</a> gives a number of functions that are able to model the relation between the two variables. It is indicated when variables have been transformed to render linear the relation between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. It should be noted that the modified power model is simply a re-writing of the exponential model, and that the root model is simply a re-writing of the modified exponential model. It should also be noted that a large proportion of these models are simply special cases of more complex models that contain more parameters. For example, the linear model is simply a special case of the polynomial model, and the Gompertz model is simply a special case of the Sloboda model, etc.</p>
+<p>The <span class="math inline">\(p\)</span> order polynomial model should be used with caution as polynomials are able to fit any form provided the <span class="math inline">\(p\)</span> order is sufficiently high (the usual functions can all be decomposed in a polynomials database: this is the principle of limited development). In practice, we may have a polynomial that very closely follows the form of the cluster of points across the range of values available, but which assumes a very unlikely form outside this range. In other words, the polynomial model may present a risk when extrapolating, and the higher the <span class="math inline">\(p\)</span> order, the greater the risk. In practice, therefore, fitting greater than 3rd order polynomials should be avoided.</p>
+</div>
+</div>
+<div id="exploring-variance" class="section level2">
+<h2><span class="header-section-number">5.2</span> Exploring variance</h2>
+<p>Let us now consider the model’s error term <span class="math inline">\(\varepsilon\)</span> that links the response variable <span class="math inline">\(Y\)</span> to an effect variable
+<span class="math inline">\(X\)</span>. Exploring the form of the variance corresponds basically to answering the question: is the variance of the residuals constant (homoscedasticity) or not (heteroscedasticity)? The reply to this question depends implicitly on the precise form of the relation that will be used to fit the model. For example, for the power relation <span class="math inline">\(Y=aX^b\)</span>, we can</p>
+<ul>
+<li><p>either fit the non-linear model <span class="math inline">\(Y=aX^b+\varepsilon\)</span>, which corresponds to estimating
+parameters <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> directly;</p></li>
+<li><p>or fit the linear model <span class="math inline">\(Y&#39;=a&#39;+bX&#39;+\varepsilon\)</span> to the transformed data <span class="math inline">\(Y&#39;=\ln Y\)</span> and <span class="math inline">\(X&#39;=\ln X\)</span>, which corresponds to estimating parameters <span class="math inline">\(a&#39;=\ln a\)</span> and <span class="math inline">\(b\)</span>.</p></li>
+</ul>
+<p>These two options are obviously not interchangeable as the error term <span class="math inline">\(\varepsilon\)</span> (which we assume follows a normal distribution of constant standard deviation) does not play the same role in the two cases. In the first case the error is additive with respect to the power model. In the second case the error is additive with respect to the linearized model. Therefore, if we return to the power model:
+<span class="math display">\[
+Y=\exp(Y&#39;)=aX^b\ \exp(\varepsilon)=aX^b\ \varepsilon&#39;
+\]</span>
+which corresponds to a multiplicative error with respect to the power model, where <span class="math inline">\(\varepsilon&#39;\)</span> follows a lognormal distribution. The difference between these two options is illustrated in Figure <a href="5-explo.html#fig:adml">5.15</a>. The additive error is expressed by a constant variance in the plot (a) of <span class="math inline">\(Y\)</span> against <span class="math inline">\(X\)</span> and by a variance that decreases with <span class="math inline">\(X\)</span> in the plot (c) of the same, but log-transformed, data. The multiplicative error is expressed by a variance that increases with <span class="math inline">\(X\)</span>
+in the plot (b) of <span class="math inline">\(Y\)</span> against <span class="math inline">\(X\)</span> and by a constant variance in the plot (d) of the same, but log-transformed, data.</p>
+<div class="figure" style="text-align: center"><span id="fig:adml"></span>
+<img src="source/figures/addmult.png" alt="Power model with additive (A and C) or multiplicative (B and D) error. Plot (C) (respectively D) results from plot (A) (respectively B) by transformation of the variables \(X\rightarrow\ln X\) and \(Y\rightarrow\ln Y\)." width="80%" />
+<p class="caption">
+Figure 5.15: Power model with additive (A and C) or multiplicative (B and D) error. Plot (C) (respectively D) results from plot (A) (respectively B) by transformation of the variables <span class="math inline">\(X\rightarrow\ln X\)</span> and <span class="math inline">\(Y\rightarrow\ln Y\)</span>.
+</p>
+</div>
+<p>Thus, when the model linking <span class="math inline">\(Y\)</span> to <span class="math inline">\(X\)</span> is linearized by a variables transformation, this affects both the form of the mean relation and that of the error term. This property may be used to stabilize residuals that vary with <span class="math inline">\(X\)</span> rendering them constant, but this point will be addressed in the next chapter. For the moment, we are looking to explore the form of the error <span class="math inline">\(Y-\mbox{E}(Y)\)</span> in relation to <span class="math inline">\(X\)</span>, without transforming the variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
+<p>As the form of the mean relation <span class="math inline">\(\mbox{E}(Y)=f(X)\)</span> has already been determined graphically, a simple visual examination of the plot of <span class="math inline">\(Y\)</span> against <span class="math inline">\(X\)</span> will show whether the points are evenly distributed on each side of the curve <span class="math inline">\(f\)</span> for all values of <span class="math inline">\(X\)</span>. Plots (a) and (b) in Figure <a href="5-explo.html#fig:exgr">5.1</a>, for example, illustrate the case of residuals of constant variance at all values of <span class="math inline">\(X\)</span>, whereas plots (c) and (d) in the same figure show the case of residuals that increase in variance with <span class="math inline">\(X\)</span>. More complex relations, like that illustrated in Figure <a href="5-explo.html#fig:sin">5.16</a>, may also be imagined. In the particular case illustrated by Figure <a href="5-explo.html#fig:sin">5.16</a>, the variance of the residuals fluctuates periodically with <span class="math inline">\(X\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:sin"></span>
+<img src="source/figures/sinvar.png" alt="Scatter plot of points generated by the model \(Y=a+bX+\varepsilon\), where \(\varepsilon\) follows a normal distribution with a mean of zero and a standard deviation proportional to the cosine of \(X\)." width="40%" />
+<p class="caption">
+Figure 5.16: Scatter plot of points generated by the model <span class="math inline">\(Y=a+bX+\varepsilon\)</span>, where <span class="math inline">\(\varepsilon\)</span> follows a normal distribution with a mean of zero and a standard deviation proportional to the cosine of <span class="math inline">\(X\)</span>.
+</p>
+</div>
+<p>However, there is little risk of encountering such situations in practice in the context of biomass or volume tables. In almost all cases we need to choose between two situations: the variance of the residuals is constant or increases with <span class="math inline">\(X\)</span>. In the first case, nothing further needs to be done. In the second case, there is no need to investigate the exact form of the relation between <span class="math inline">\(X\)</span> and the variance of the residuals, but simply from the outset adopt a power model to link the variance of the residuals <span class="math inline">\(\varepsilon\)</span> to <span class="math inline">\(X\)</span>:
+<span class="math display">\[
+\mbox{Var}(\varepsilon)=\alpha X^{\beta}
+\]</span>
+The values of the coefficients <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> can be estimated at the same time as those of the model’s other coefficients during the model fitting phase, which will be considered in the next chapter.</p>
+</div>
+<div id="exploring-doesnt-mean-selecting" class="section level2">
+<h2><span class="header-section-number">5.3</span> Exploring doesn’t mean selecting</h2>
+<p>By way of a conclusion, it should be underlined that this graphical exploration does not aim to select a single type of model, but rather to sort between models that are able to describe the dataset and those that are not. Far from seeking to select THE model assumed to be the best at describing the data, efforts should be made to select three or four candidate models likely to be able to describe the data. The final choice between these three or four models selected during the graphical exploration phase can then be made after the data fitting phase that is described in the next chapter.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="4-don.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="6-fit.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
